@@ -76,8 +76,8 @@ def standardize(srl):
     ar = "ARG3"
     for k in ["ARG3","ARG4","LOC","TMP"]:
       if k in d:
-        d[ar] = k
-      if ar == "ARG4": break
+        d[ar] = d[k]
+        if ar == "ARG4": break
       ar = "ARG4"
 
     #deal w/ mathkws
@@ -274,6 +274,7 @@ def main(df,pn):
         bad+=1
     files = next(walk,None)
     k +=1
+    #if k > 100: break
 
   print("Failed: ",bad)
   with open("pickles/"+pn+".pickle",'wb') as f:
