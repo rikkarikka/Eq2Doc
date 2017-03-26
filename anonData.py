@@ -18,14 +18,21 @@ def parse(fn):
     else:
       tmp.append(x)
 
+  if " ".join(tmp).strip():
+    sents.append("\n".join(tmp))
   srl = []
   for i,s in enumerate(sents):
     t_srl = {}
-    if not s: 
+    if not s or s == "NO DEPS": 
       srl.append([])
       continue
     trips = [x.split()[0:5] for x in s.split("\n")]
-    preds = set([" ".join(x[0:2]) for x in trips if "ARG" in x[2]])
+    try:
+      preds = set([" ".join(x[0:2]) for x in trips if "ARG" in x[2]])
+    except:
+
+      print(trips)
+      exit()
     for p in preds:
       ps = p.split(" ")
       args = [x for x in trips if x[0] == ps[0] and x[1] == ps[1] and "ARG" in x[2]]
@@ -153,35 +160,33 @@ def get_kws_nums(t,s):
 
   return s
 
-def nertext(ner,nerd,txt):
-  txt = " ".join(txt)
-  txt2 = [x.split(" ") for x in txt]
-  ner = "\n".join(ner)
-  ner = [x.split() for x in ner.split("\n")]
+def nertext(ner,nerd):
   d = nerd
-  nertxt = [x[1].lower() for x in ner]
-  last = "O"
-  nertxt = []
   thisner = []
-  for x in ner:
-    if x[4] != "O":
-      nah = True
-      if x[4] in d:
-        if x[1] in d[x[4]]:
-          replacement = d[x[4]].index(x[1])
-          rstring = x[4]+"_"+str(replacement)
-          nah = False
-          
-      if nah:
-        if x[4]!=last:
-          rstring = x[4]
-    else:
-      if last != "O":
-        nertxt.append(rstring)
-      nertxt.append(x[1].lower())
-    last = x[4] 
-
-  return " ".join(nertxt)
+  sents = []
+  for s in ner:
+    nertxt = []
+    last = "O"
+    for x in s.split("\n"):
+      x = x.split()
+      if x[4] != "O":
+        nah = True
+        if x[4] in d:
+          if x[1] in d[x[4]]:
+            replacement = d[x[4]].index(x[1])
+            rstring = x[4]+"_"+str(replacement)
+            nah = False
+            
+        if nah:
+          if x[4]!=last:
+            rstring = x[4]
+      else:
+        if last != "O":
+          nertxt.append(rstring)
+        nertxt.append(x[1].lower())
+      last = x[4] 
+    sents.append(" ".join(nertxt))
+  return sents
 
 
 def nersrl(ner,srl,nerd):
@@ -234,7 +239,6 @@ def main(df,pn):
       src = []
       targ = []
 
-      fns.append(f)
       fn = files[0]+"/"+f
       with open(fn.split(".deps")[0]) as txt:
         txt_ = txt.read().split('\n')
@@ -267,14 +271,20 @@ def main(df,pn):
           src.append(asrl)
         i+=1
       try:
-        targ = nertext(ner,nerd,txt_)
+        targ = nertext(ner,nerd)
+        assert(len(targ)==len(src))
         srcs.append(src)
         targs.append(targ)
+        fns.append(f)
       except:
         bad+=1
+      '''
+      k += 1
+      if k > 1000: 
+        print("Failed: ",bad)
+        exit()
+      '''
     files = next(walk,None)
-    k +=1
-    #if k > 100: break
 
   print("Failed: ",bad)
   with open("pickles/"+pn+".pickle",'wb') as f:

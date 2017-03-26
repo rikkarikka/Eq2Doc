@@ -177,9 +177,9 @@ def doNER(ner,srl,txt):
 
 class configMath:
   def __init__(self):
-    self.depdir = "data/deps/"
-    self.nerdir = "data/splitsNER/"
-    self.txtdir = "data/splits/"
+    self.depdir = "data/math_data/deps/"
+    self.nerdir = "data/math_data/splitsNER/"
+    self.txtdir = "data/math_data/splits/"
 
 def main(cfg):
   bad = 0
@@ -246,7 +246,7 @@ def main(cfg):
     k +=1
 
   print(bad)
-  with open("pickles/anonMathData-2.23.pickle",'wb') as f:
+  with open("pickles/anonMathData.pickle",'wb') as f:
     pickle.dump((fns,srcs,pasts,targs,dps),f)
 
 
