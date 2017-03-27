@@ -169,7 +169,8 @@ def val(net,src,tgt,eq_v,out_v):
   ostr = ""
   net.set_gen()
   dps = torch.LongTensor(1).zero_()
-  for s in src:
+  acc = 0
+  for c,s in enumerate(src):
     if CUDA_ON:
       dps.cuda()
       outputs,_ = net(Variable(torch.cuda.LongTensor(s).view(1,-1)),Variable(dps).cuda(),hc,hc_2)
@@ -177,12 +178,13 @@ def val(net,src,tgt,eq_v,out_v):
       outputs,_ = net(Variable(torch.LongTensor(s).view(1,-1)),Variable(dps),hc,hc_2)
     tstr = ""
     tstr += ' '.join([ev[x] for x in s]) + '\n'
+    acc += sum([int(outputs[i].data[0]==tgt[c][i]) for i in range(50)])/50
     for j in range(5):
       tstr += ' '.join([out_v[int(outputs[(j*10)+k].data[0])] for k in range(10)]) + '\n'
     #print(tstr)
     ostr += tstr + '\n'
   net.unset_gen()
-  return ostr
+  return ostr,acc
 
 
 def train():
@@ -226,8 +228,9 @@ def train():
         'epoch':epoch
       }
       torch.save(checkpoint, "saved_models/"+str(epoch)+'checkpoint.mod')
-      ostr = val(net,dev_src,dev_tgt,eq_v,out_v)
-      with open(str(epoch)+"-val.out",'w') as f:
+      ostr,acc = val(net,dev_src,dev_tgt,eq_v,out_v)
+      print("Valid Accuracy: %f" %acc)
+      with open(str(epoch)+"-val-"+str(acc)+".out",'w') as f:
         f.write(ostr)
 
 if __name__=="__main__":
