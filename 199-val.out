@@ -1,0 +1,861 @@
+x quarters = NUMBER_0 quarters - NUMBER_1 quarters
+had PERSON_0 DURATION_1 - - - - NUMBER_0 - NEW_S
+had rabbits MONEY_1 - - - - MONEY_2 - NEW_S
+have she quarters - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x books = NUMBER_0 books - NUMBER_1 books
+has PERSON_0 books - - - - NUMBER_0 - NEW_S
+has PERSON_1 books - - - - NUMBER_1 - NEW_S
+have oov books - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ x = $ NUMBER_0 + $ NUMBER_1
+spent PERSON_0 game - MONEY_0 - - MONEY_1 MONEY_2 NEW_S
+wanted he 's - MONEY_0 - - NUMBER_0 - NEW_S
+spend PERSON_0 - - much - - total how_much NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x cars = NUMBER_0 cars + NUMBER_1 cars
+had PERSON_0 cars - - - - NUMBER_0 - NEW_S
+gave he cars - - - - NUMBER_1 NUMBER_2 NEW_S
+had he cars - - - - NUMBER_2 - NEW_S
+split they money - - - - together how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 dollars / NUMBER_1 what = x
+bought PERSON_0 MONEY_1 - - - - MONEY_0 - NEW_S
+bought she MONEY_1 - - - - MONEY_0 - NEW_S
+bought she MONEY_1 - - - - MONEY_2 - SAME_S
+places he MONEY_1 - - - - MONEY_2 - NEW_S
+left PERSON_0 - - - - - - - NEW_S
+
+( NUMBER_2 oov * x ) - NUMBER_1 gallon = NUMBER_0 gallons
+oov - oov - - - - - - NEW_S
+is it oov - - - - NUMBER_0 - NEW_S
+is rate rate - - - - NUMBER_0 - SAME_S
+find - number - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+oov % = ( ( ( ( NUMBER_0 % + NUMBER_1 % ) + NUMBER_2 % ) + NUMBER_3 % ) + x % ) / 5.0
+went PERSON_0 - - - - - - - NEW_S
+spent PERSON_0 clothes - - - - - - SAME_S
+received PERSON_0 oov - - - - - - NEW_S
+spent PERSON_0 buy - - - - - - NEW_S
+spent PERSON_0 cars - - - - NUMBER_1 NUMBER_3 NEW_S
+
+NUMBER_0 * 100.0 = x
+have PERSON_0 oov - - - - - - NEW_S
+have PERSON_0 oov - - - - - - SAME_S
+have PERSON_0 oov - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x cups = NUMBER_0 cup + NUMBER_0 cup
+used PERSON_0 oov - - - - - - NEW_S
+used she cup - - - - NUMBER_0 NUMBER_1 NEW_S
+add she cups - - - - NUMBER_2 - NEW_S
+need she cups - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pie = NUMBER_0 pie - NUMBER_1 pie
+making - PERSON_0 - - - - NUMBER_0 - NEW_S
+buys she mile - - - - NUMBER_0 - NEW_S
+have PERSON_0 - - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 oov * NUMBER_1 grams = ( NUMBER_0 - x ) * NUMBER_2 grams
+oov - store - - - - NUMBER_0 - NEW_S
+used - oov - - - - NUMBER_1 - SAME_S
+is what number - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x dollars = ( NUMBER_1 dollars / NUMBER_0 dollars ) * 100.0
+included - MONEY_1 bill - - - DURATION_0 - NEW_S
+was what price - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = NUMBER_0 oov + NUMBER_1
+oov PERSON_0 dogs - - - - - - NEW_S
+walking PERSON_0 cake - - - - NUMBER_0 - NEW_S
+has it bucket - - - - NUMBER_1 - NEW_S
+eat they - - - - - NUMBER_0 - NEW_S
+finish she that - - - - NUMBER_2 - SAME_S
+
+NUMBER_0 oov * ( NUMBER_1 + x oov ) = NUMBER_2
+oov PERSON_0 pie - - - - - - NEW_S
+started - that - - - - - - NEW_S
+started - that - - - - - - NEW_S
+started - that - - - - NUMBER_0 - NEW_S
+oov - that - - - - - - NEW_S
+
+85.0 oov = ( ( ( ( NUMBER_0 + NUMBER_1 ) + NUMBER_2 ) + NUMBER_3 ) + x oov ) / 5.0
+oov PERSON_0 book - - - - - - NEW_S
+had student NUMBER_1 - - - - NUMBER_1 - NEW_S
+have book amount - - - - - - NEW_S
+be what amount - - - - - - NEW_S
+earn student NUMBER_3 - - - - - - SAME_S
+
+x inch = NUMBER_0 inch + NUMBER_1 inch
+snowed - it inch - - - NUMBER_0 NUMBER_1 NEW_S
+was what amount - - - - total - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ x = NUMBER_1 dollars - ( ( NUMBER_0 oov * 0.01 ) * NUMBER_1 )
+oov - rate - - - - NUMBER_0 NUMBER_1 NEW_S
+find - it MONEY_1 much - - MONEY_2 - NEW_S
+find he money - - - - how_much - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x bags = NUMBER_0 bag + NUMBER_0 bag + NUMBER_2 bag
+making - pastries - - - - - - NEW_S
+making - bags - - - - - - SAME_S
+making - bags - - - - - - NEW_S
+used they bags - - - - NUMBER_0 NUMBER_1 SAME_S
+use bakery bags - - - - in_all how_many NEW_S
+
+x bottles = NUMBER_0 bottle + NUMBER_0 bottle + NUMBER_2 bottle
+starting PERSON_0 oov - - - - - - NEW_S
+oov he NUMBER_0 PERSON_0 - - - NUMBER_0 NUMBER_0 NEW_S
+oov he - - - - - NUMBER_0 NUMBER_1 SAME_S
+have he grams - - - - NUMBER_0 NUMBER_0 SAME_S
+have he grams - - - - NUMBER_0 NUMBER_0 SAME_S
+
+x pictures = ( ( NUMBER_0 pictures + NUMBER_1 ) - NUMBER_2 pictures )
+picked PERSON_0 pictures - - - - NUMBER_0 NUMBER_1 NEW_S
+deleted she pictures - - - - NUMBER_2 how_many NEW_S
+have she - - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x problems = ( ( NUMBER_0 problems + NUMBER_1 problems ) - NUMBER_2 problems )
+had PERSON_0 problems - - - - NUMBER_0 NUMBER_1 NEW_S
+deleted she number - - - - NUMBER_2 how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x tickets = ( ( NUMBER_0 tickets + NUMBER_1 tickets ) - NUMBER_2 tickets )
+playing PERSON_0 tickets - - - - NUMBER_0 NUMBER_1 NEW_S
+got they oov tickets - - - - - SAME_S
+left - oov - - - - - - SAME_S
+buy they rest - - - - - - SAME_S
+left they oov - - - - - - SAME_S
+
+x books = ( ( NUMBER_0 books + NUMBER_1 books ) - NUMBER_2 books )
+got class books library - - - NUMBER_0 - NEW_S
+got library books library - - - NUMBER_1 more NEW_S
+got PERSON_0 books shelf - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ x = ( ( NUMBER_0 dollars + NUMBER_0 dollars ) - $ 2.0 )
+made PERSON_0 MONEY_0 - - - - - - SAME_S
+paid he MONEY_1 - MONEY_0 - - MONEY_0 - NEW_S
+left he money - - - - how_much - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = ( ( NUMBER_0 oov + NUMBER_2 ones ) - NUMBER_1 ones )
+has PERSON_0 friends - - - - NUMBER_0 - NEW_S
+has friends book - - - - NUMBER_1 - NEW_S
+are friends there - - - - NUMBER_0 how_many NEW_S
+get student cards - - - - - - SAME_S
+have he many - - - - - - NEW_S
+
+x pages = NUMBER_0 pages + NUMBER_1 pages
+has PERSON_0 watermelons - - - - NUMBER_0 - NEW_S
+has he total - - - - NUMBER_1 - NEW_S
+are oov watermelons - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = ( NUMBER_2 pieces * ( NUMBER_0 boxes + NUMBER_1 boxes ) )
+starts - boxes - - - - NUMBER_0 NUMBER_1 NEW_S
+were boxes boxes - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = ( NUMBER_0 oov * ( NUMBER_0 oov + NUMBER_0 points ) )
+scored PERSON_0 that - - - - - - NEW_S
+scored she that - - - - NUMBER_0 NUMBER_1 NEW_S
+scored he - - - - - NUMBER_1 - NEW_S
+left - - - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x miles = NUMBER_0 miles - NUMBER_1 miles
+drove PERSON_0 - - - - - - - NEW_S
+spending he miles - - - - NUMBER_0 - NEW_S
+oov he - - - - - NUMBER_1 - SAME_S
+oov he - points - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pictures = ( ( NUMBER_0 pictures + NUMBER_1 albums ) / NUMBER_1 )
+were there boxes - - - - NUMBER_0 NUMBER_1 NEW_S
+buy she online - - - - - - SAME_S
+make she rest - - - - - - SAME_S
+use she rest - - - - NUMBER_1 - SAME_S
+use she rest - - - - NUMBER_1 - SAME_S
+
+x pieces = ( NUMBER_2 pieces * ( NUMBER_0 boxes - NUMBER_1 ) )
+starts - times - - - - NUMBER_0 - NEW_S
+takes NUMBER_1 NUMBER_2 sister - - - NUMBER_1 - NEW_S
+takes - rest loads - - - NUMBER_2 - SAME_S
+start - - - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x lives = ( NUMBER_1 players * ( NUMBER_0 friends - NUMBER_1 lives ) )
+had PERSON_0 pieces - - - - NUMBER_0 - NEW_S
+scored PERSON_1 friends - - - - NUMBER_0 - NEW_S
+scored PERSON_1 friends - - - - NUMBER_0 - NEW_S
+scored PERSON_0 friends - - - - NUMBER_1 - NEW_S
+lost she NUMBER_2 - - - - - - SAME_S
+
+x pieces = ( NUMBER_2 pieces * ( NUMBER_0 boxes - NUMBER_1 ) )
+starts - times - - - - NUMBER_0 - NEW_S
+takes NUMBER_1 NUMBER_2 sister - - - NUMBER_1 - NEW_S
+takes - rest loads - - - NUMBER_2 - SAME_S
+start - - - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ x = ( $ 7.0 * ( NUMBER_0 games - NUMBER_1 them ) )
+had PERSON_0 oov - - - - - - NEW_S
+oov oov MONEY_0 - - - - - - SAME_S
+had she oov - MONEY_0 - - NUMBER_0 NUMBER_1 SAME_S
+oov - games - - - - - - SAME_S
+had she much - - - - NUMBER_0 NUMBER_1 SAME_S
+
+x = ( NUMBER_2 dollars * ( NUMBER_0 tickets - NUMBER_1 tickets ) )
+made PERSON_0 tickets - - - - NUMBER_0 - NEW_S
+oov - them load - - - - - NEW_S
+picked - tickets - - - - DURATION_0 - NEW_S
+left - rest - - - - - - SAME_S
+take it - - - - - - - SAME_S
+
+x pounds = NUMBER_0 pounds + NUMBER_1 pounds
+picked PERSON_0 MONEY_1 - - - - MONEY_0 MONEY_2 NEW_S
+buy she pounds - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pounds = NUMBER_0 pounds - NUMBER_1 pounds
+weighs - PERSON_0 - pounds - - NUMBER_0 NUMBER_1 NEW_S
+weighed - block - pounds - - NUMBER_0 NUMBER_1 SAME_S
+weigh - more - - - - more how_much NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = ( ( NUMBER_0 files - NUMBER_1 them ) / NUMBER_2 files )
+had PERSON_0 oov - - - - NUMBER_0 - NEW_S
+picked she oov - - - - NUMBER_1 - NEW_S
+put she them - - - - NUMBER_2 - SAME_S
+oov - them oov - - - - - SAME_S
+oov she rest - - - - - - SAME_S
+
+x boxes = ( ( NUMBER_0 - NUMBER_1 them ) / NUMBER_2 games )
+selling PERSON_0 games - - - - - - NEW_S
+started he - - - - - NUMBER_0 - NEW_S
+sold he them - - - - NUMBER_1 - SAME_S
+packed he rest - - - - - - SAME_S
+packed he rest - - - - - - SAME_S
+
+x shelves = ( ( NUMBER_0 books - NUMBER_1 them ) / NUMBER_2 )
+had PERSON_0 books - - - - NUMBER_0 - NEW_S
+oov - they oov - - - NUMBER_1 - NEW_S
+put he shelves - - - - NUMBER_2 - SAME_S
+are oov oov - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x crayons = NUMBER_0 crayons + NUMBER_1 crayons
+are there crayons - - - - NUMBER_0 NUMBER_1 NEW_S
+placed PERSON_0 crayons desk - - - NUMBER_2 - NEW_S
+are crayons there - - - - total how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 seashells - x seashells = NUMBER_1 seashell
+found PERSON_0 seashells - - - - NUMBER_0 - NEW_S
+gave he seashells PERSON_1 - - - - - SAME_S
+has he seashell - - - - NUMBER_1 - NEW_S
+give he seashells PERSON_1 - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x erasers = NUMBER_0 erasers + NUMBER_1 erasers
+are there erasers - - - - NUMBER_0 NUMBER_1 NEW_S
+placed PERSON_0 erasers - - - - NUMBER_2 NUMBER_3 NEW_S
+are erasers there - - - - total how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 muffins / 12.0 = x boxes
+has PERSON_0 boxes - - - - NUMBER_0 - NEW_S
+start PERSON_0 cases - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 calories * NUMBER_1 bars = x calories * 12.0
+are there calories - - - - NUMBER_0 - NEW_S
+are calories there - - - - NUMBER_0 - NEW_S
+are calories there - - - - NUMBER_1 how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x cards - NUMBER_0 cards = NUMBER_1 cards
+had PERSON_0 cards - - - - - - NEW_S
+has PERSON_1 cards - - - - NUMBER_1 - NEW_S
+have PERSON_1 cards - - - - - - NEW_S
+has PERSON_0 cards - - - - how_many - SAME_S
+have PERSON_0 cards - - - - - - SAME_S
+
+x games = NUMBER_0 games - NUMBER_1 games
+played school games - - - - NUMBER_0 - NEW_S
+won PERSON_0 games - - - - NUMBER_1 - NEW_S
+miss PERSON_0 games - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ oov * NUMBER_0 hours = $ x
+earns PERSON_0 MONEY_0 - - - - MONEY_1 - NEW_S
+oov he oov - - - - MONEY_1 - NEW_S
+oov she oov - - - - MONEY_1 - SAME_S
+get person oov - - - - MONEY_2 DURATION_2 SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 trout * NUMBER_1 times = x trout
+filled PERSON_0 oov bag - - - NUMBER_0 - NEW_S
+see PERSON_0 oov - - - - - - NEW_S
+has PERSON_0 oov - - - - NUMBER_1 - SAME_S
+are dogs there - - - - NUMBER_1 more NEW_S
+have PERSON_0 oov - - - - how_many - NEW_S
+
+x balloons = NUMBER_0 balloons - NUMBER_1 balloons
+has PERSON_0 balloons - - - - NUMBER_0 NUMBER_1 NEW_S
+lost she balloons - - - - NUMBER_2 - NEW_S
+have PERSON_0 balloons - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x potatoes = NUMBER_0 potatoes - NUMBER_1 cantelopes
+picked PERSON_0 potatoes - - - - NUMBER_0 - NEW_S
+ate rabbits potatoes - - - - NUMBER_1 - NEW_S
+have PERSON_0 potatoes - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+( NUMBER_0 marbles * 12.0 ) * NUMBER_1 marbles = x marbles
+has PERSON_0 oranges - - - - NUMBER_0 - NEW_S
+has PERSON_1 more - - - - NUMBER_1 more NEW_S
+have PERSON_0 cats - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 gumballs * 8.0 = x gumballs
+have PERSON_0 candies - - - - - - NEW_S
+have PERSON_0 heads - - - - - - NEW_S
+have PERSON_0 that - - - - - - SAME_S
+have PERSON_0 boxes - - - - - - SAME_S
+have PERSON_0 lives - - - - how_many - NEW_S
+
+( NUMBER_0 quarters * 0.25 ) + ( NUMBER_1 pennies * 0.01 ) = x How
+is oov oov - - - - NUMBER_0 - NEW_S
+found PERSON_0 MONEY_1 - - - - MONEY_0 - NEW_S
+is what cost - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = NUMBER_0 oov - NUMBER_1 oov
+find - dogs - - - - NUMBER_0 - NEW_S
+lost she - - - - - NUMBER_1 - NEW_S
+have PERSON_0 that - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 cells = NUMBER_1 cells + x cells
+were there samples - - - - NUMBER_0 NUMBER_1 NEW_S
+was what sample - - - - total - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 marbles + NUMBER_1 marbles = x marbles
+has PERSON_0 marbles - - - - NUMBER_0 - NEW_S
+has PERSON_0 marbles - - - - NUMBER_1 more NEW_S
+have PERSON_1 marbles - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 mile - NUMBER_1 mile = x mile
+ran PERSON_0 mile - - - - NUMBER_0 - NEW_S
+walked PERSON_0 mile - - - - NUMBER_1 - SAME_S
+run PERSON_0 much - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 + NUMBER_1 = x
+are there - - - - - NUMBER_0 - NEW_S
+are there PERSON_0 - - - - NUMBER_0 - NEW_S
+are there oov - - - - NUMBER_1 more SAME_S
+are there oov - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 bucket + NUMBER_1 bucket = x buckets
+eats oov bucket - - - - NUMBER_0 NUMBER_1 NEW_S
+wanted - water bucket - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 oov - NUMBER_1 = x oov
+has PERSON_0 bucket - - - - NUMBER_0 - NEW_S
+has he cake - - - - NUMBER_1 - NEW_S
+have she stamps - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 box - NUMBER_1 box = x box
+taking PERSON_0 oov - - - - - - NEW_S
+used PERSON_0 them - - - - NUMBER_1 - SAME_S
+was oov box - - - - NUMBER_1 - NEW_S
+left - rest PERSON_1 - - - NUMBER_1 more SAME_S
+left - rest PERSON_1 - - - - - SAME_S
+
+NUMBER_0 + NUMBER_0 + NUMBER_2 pound = x pounds
+oov - PERSON_0 - - - - NUMBER_0 NUMBER_0 NEW_S
+buy MISC_0 oov - - - - - - SAME_S
+oov she money - - - - NUMBER_0 NUMBER_1 SAME_S
+cost - oov - - - - NUMBER_0 NUMBER_1 SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 cup + NUMBER_1 + NUMBER_0 cup = x cups
+added PERSON_0 cup batch - - - NUMBER_0 NUMBER_1 NEW_S
+added - cup cup - - - NUMBER_0 add NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+$ x = $ NUMBER_0 + $ NUMBER_1
+spent PERSON_0 game - MONEY_0 - - MONEY_1 MONEY_2 NEW_S
+wanted he 's - MONEY_0 - - NUMBER_0 - NEW_S
+spend PERSON_0 - - much - - total how_much NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 + NUMBER_1 + NUMBER_2 ounce = x ounce
+went - PERSON_0 - - - - NUMBER_0 NUMBER_1 NEW_S
+went - PERSON_0 - - - - - - NEW_S
+are much oov - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 buckets - NUMBER_1 buckets = x buckets
+had oov - - - - - - - NEW_S
+had oov animals - - - - DATE_0 per NEW_S
+picked she oov - - - - NUMBER_1 - SAME_S
+left - oov - - - - - - SAME_S
+left she pie - - - - - - SAME_S
+
+NUMBER_0 pieces * x oov = NUMBER_1 pieces
+oov - pieces - - - - NUMBER_0 NUMBER_1 NEW_S
+oov - pieces - - - - NUMBER_1 - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 bales + x bales = NUMBER_1 bales
+were there ton - - - - NUMBER_0 - NEW_S
+are there children - - - - NUMBER_1 - NEW_S
+is oov cans - - - - - - SAME_S
+were there it - - - - more how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+NUMBER_0 markers + NUMBER_1 markers = x markers
+has MISC_0 markers - - - - DATE_0 total NEW_S
+has MISC_0 markers - - - - how_many - NEW_S
+have they markers - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x marbles - NUMBER_0 = NUMBER_1 marbles
+has PERSON_0 marbles - - - - - - NEW_S
+gave he marbles - - - - NUMBER_1 - NEW_S
+has he - - - - - NUMBER_2 - NEW_S
+start - PERSON_0 - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x eggs = ( NUMBER_0 eggs + NUMBER_1 eggs )
+had PERSON_0 eggs - - - - NUMBER_0 - NEW_S
+grew - eggs NUMBER_1 - - - NUMBER_1 - NEW_S
+are eggs eggs - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x apples = ( NUMBER_0 apples + NUMBER_1 more )
+has PERSON_0 apples - - - - NUMBER_0 - NEW_S
+gets she more PERSON_1 - - - NUMBER_1 more NEW_S
+have PERSON_0 apples - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pencils = ( NUMBER_0 pencils + NUMBER_1 more )
+has PERSON_0 pencils - - - - NUMBER_0 - NEW_S
+gets he more PERSON_1 - - - NUMBER_1 more NEW_S
+have PERSON_0 pencils - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x candies = ( NUMBER_0 candies - NUMBER_1 )
+starts - PERSON_0 candies - - - NUMBER_0 - NEW_S
+takes PERSON_1 NUMBER_1 - - - - NUMBER_1 - NEW_S
+end - PERSON_0 candies - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x Skittles = ( NUMBER_0 Skittles - NUMBER_1 )
+has PERSON_0 skittles - - - - NUMBER_0 - NEW_S
+gives she NUMBER_1 PERSON_1 - - - NUMBER_1 - NEW_S
+have PERSON_0 skittles - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oranges = ( NUMBER_0 oranges - NUMBER_1 )
+has PERSON_0 oranges - - - - NUMBER_0 - NEW_S
+shares he NUMBER_1 PERSON_1 - - - NUMBER_1 - NEW_S
+have PERSON_0 oranges - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x erasers = ( NUMBER_0 erasers - NUMBER_1 )
+had PERSON_0 erasers - - - - NUMBER_0 - NEW_S
+gives she NUMBER_1 PERSON_1 - - - NUMBER_1 - NEW_S
+end - PERSON_0 erasers - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x Skittles = ( NUMBER_0 Skittles - NUMBER_1 )
+has PERSON_0 skittles - - - - NUMBER_0 - NEW_S
+gives she NUMBER_1 PERSON_1 - - - NUMBER_1 - NEW_S
+have PERSON_0 skittles - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x blocks = ( NUMBER_0 blocks - NUMBER_1 )
+starts - PERSON_0 blocks - - - NUMBER_0 - NEW_S
+loses she NUMBER_1 - - - - NUMBER_1 - NEW_S
+end - PERSON_0 blocks - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x apples = ( NUMBER_0 apples + NUMBER_1 )
+has PERSON_0 apples - - - - NUMBER_0 - NEW_S
+has PERSON_1 apples - - - - NUMBER_1 - NEW_S
+shares she - PERSON_1 - - - NUMBER_2 - NEW_S
+have PERSON_0 apples - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x marbles = ( NUMBER_0 marbles * NUMBER_1 boxes )
+has PERSON_0 marbles - - - - NUMBER_0 - NEW_S
+oov - PERSON_1 box - - - NUMBER_1 - NEW_S
+start she - many - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oranges = ( NUMBER_0 oranges / NUMBER_1 boxes )
+has PERSON_0 oranges - - - - NUMBER_0 - NEW_S
+put - oranges - - - - - - SAME_S
+comes - PERSON_1 help - - - - - NEW_S
+help PERSON_1 - comes - - - - - SAME_S
+brings PERSON_1 share - - - - NUMBER_1 - SAME_S
+
+x apples = ( NUMBER_0 apples / NUMBER_1 people )
+comes - apples - - - - NUMBER_0 - NEW_S
+has she apples - - - - NUMBER_1 - NEW_S
+make - lunch - - - - - - SAME_S
+make - they - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x candies = ( NUMBER_0 candies + NUMBER_1 candies )
+shopping flowers candies - - - - NUMBER_0 - NEW_S
+had NUMBER_1 candies - - - - NUMBER_1 more NEW_S
+have they candies - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x apples = ( NUMBER_0 apples + NUMBER_0 more )
+needs PERSON_0 apples - - - - NUMBER_0 - NEW_S
+earned she apples - - - - NUMBER_1 more NEW_S
+have PERSON_0 apples - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x marbles = ( NUMBER_0 marbles + NUMBER_1 more )
+has PERSON_0 marbles - - - - NUMBER_0 - NEW_S
+gets she more PERSON_1 - - - NUMBER_1 more NEW_S
+have PERSON_0 marbles - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x marbles = ( NUMBER_0 marbles - NUMBER_1 )
+had PERSON_0 marbles - - - - NUMBER_0 - NEW_S
+loses he marbles - - - - NUMBER_1 - NEW_S
+have he marbles - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x erasers = ( NUMBER_0 boxes * NUMBER_1 erasers )
+are there lake - - - - NUMBER_0 - NEW_S
+are there boxes - - - - NUMBER_1 more NEW_S
+end - box - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x cards = NUMBER_0 cards + NUMBER_1 cards
+had PERSON_0 cards - - - - NUMBER_0 - NEW_S
+got she NUMBER_1 - - - - NUMBER_1 - NEW_S
+are many total - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x watermelons = NUMBER_0 watermelons + NUMBER_1 watermelons
+grew - watermelons - - - - NUMBER_0 NUMBER_1 NEW_S
+grew - PERSON_0 watermelons - - - NUMBER_2 - NEW_S
+grow they watermelons - - - - total how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x flowers = ( NUMBER_0 oov * NUMBER_1 flowers )
+has oov flowers - - - - NUMBER_0 - NEW_S
+oov - there - - - - - - SAME_S
+has she flowers - - - - NUMBER_1 - NEW_S
+find flowers flowers - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x slices = ( NUMBER_0 pizzas * NUMBER_1 slices )
+has store pizzas - - - - NUMBER_0 - NEW_S
+are there more - - - - NUMBER_1 more NEW_S
+are there there - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x fish = ( NUMBER_1 - NUMBER_0 fish )
+has PERSON_0 fish - - - - NUMBER_0 - NEW_S
+buy she need - - - - - - SAME_S
+have she buy - - - - - - NEW_S
+buy she need - - - - - - SAME_S
+have she buy - - - - NUMBER_1 how_many SAME_S
+
+x inches = ( NUMBER_0 inches - NUMBER_1 inches )
+is hair long - - - - NUMBER_0 - NEW_S
+is long hair - - - - NUMBER_1 - NEW_S
+grow child - cut - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x dollars = ( NUMBER_1 dollars - NUMBER_0 dollars )
+had PERSON_0 MONEY_1 - - - - MONEY_0 - NEW_S
+mowing - lawns - - - - MONEY_2 - NEW_S
+left - MONEY_1 - - - - MONEY_2 - SAME_S
+left - MONEY_1 MONEY_3 - - - MONEY_2 - SAME_S
+is MONEY_2 cost - - - - DURATION_0 how_much NEW_S
+
+x birds = ( NUMBER_0 geese + NUMBER_1 ducks )
+were there oov - - - - NUMBER_0 NUMBER_1 NEW_S
+were birds oov - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pieces = ( NUMBER_0 sheets + NUMBER_1 sheets )
+has PERSON_0 oov - - - - NUMBER_0 - NEW_S
+wants they NUMBER_1 - - - - - - SAME_S
+buy PERSON_0 need - - - - - - SAME_S
+buy PERSON_0 NUMBER_1 - - - - NUMBER_1 more SAME_S
+be what - - - - - - - SAME_S
+
+x cards = ( NUMBER_0 cards - NUMBER_1 more )
+has PERSON_0 cards - - - - NUMBER_0 - NEW_S
+gives PERSON_1 NUMBER_1 - - - - NUMBER_1 - NEW_S
+end - PERSON_0 cards - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pencils = ( NUMBER_0 pencils - NUMBER_1 pencils )
+has PERSON_0 pencils - - - - NUMBER_0 - NEW_S
+gives he NUMBER_1 PERSON_1 - - - NUMBER_1 - NEW_S
+have PERSON_0 pencils - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x girls = ( NUMBER_1 children - NUMBER_0 boys )
+has PERSON_0 oov - - - - NUMBER_0 - NEW_S
+has he children - - - - NUMBER_1 - NEW_S
+have she - - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = ( NUMBER_1 oov - NUMBER_0 oov )
+find - PERSON_0 - - - - - - NEW_S
+find you that - - - - - - SAME_S
+find PERSON_0 that - - - - - - NEW_S
+find you them - - - - - - NEW_S
+oov - PERSON_1 - - - - - - NEW_S
+
+x plants = ( NUMBER_0 rows * NUMBER_1 oov )
+put - PERSON_0 caps - - - NUMBER_0 - NEW_S
+grows - eggs - - - - - - NEW_S
+has he NUMBER_1 - - - - NUMBER_1 - SAME_S
+have PERSON_0 apples - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x crayons = ( NUMBER_0 packs * NUMBER_1 crayons )
+are there crayons - - - - NUMBER_0 - NEW_S
+are there crayons - - - - NUMBER_1 - NEW_S
+have PERSON_0 crayons - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x turnips = NUMBER_0 turnips + NUMBER_1 turnips
+grew - turnips - - - - NUMBER_0 NUMBER_1 NEW_S
+grew - turnips - - - - NUMBER_2 - NEW_S
+grow they turnips - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x feet = ( NUMBER_0 feet * NUMBER_1 feet )
+contains oov kilometers - - - - NUMBER_0 - NEW_S
+oov - she - - - - NUMBER_1 - NEW_S
+get - it - - - - - - SAME_S
+make it it - - - - NUMBER_1 - SAME_S
+take it - - - - - - - SAME_S
+
+x points = ( NUMBER_0 points * NUMBER_1 games )
+oov - points - - - - NUMBER_0 per NEW_S
+NUMBER_1 he points - - - - NUMBER_2 how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x books = ( NUMBER_0 pounds / NUMBER_1 pounds )
+weigh - oov - - - - - - NEW_S
+wash - MONEY_1 oov - - - MONEY_0 - SAME_S
+is this oov - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = ( NUMBER_0 oov * NUMBER_1 hours )
+be oov DURATION_1 - - - - NUMBER_0 DURATION_0 NEW_S
+work he - - - - - NUMBER_0 - NEW_S
+be you it - - - - DURATION_0 - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = ( NUMBER_0 oov - NUMBER_1 oov )
+has PERSON_0 pie - - - - NUMBER_0 - NEW_S
+lost she NUMBER_1 - - - - NUMBER_1 - SAME_S
+have PERSON_0 what - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x miles = ( oov - NUMBER_0 miles )
+wandered PERSON_0 miles - - - - NUMBER_0 - NEW_S
+drove they miles - - - - NUMBER_1 - NEW_S
+oov - they - - - - - - NEW_S
+oov she drive - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x oov = ( NUMBER_0 oov + NUMBER_1 oov )
+had PERSON_0 pie - - - - NUMBER_0 - NEW_S
+sold she that - - - - NUMBER_1 - NEW_S
+left she - - - - - in_all how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pencils = NUMBER_0 pencils + NUMBER_1 pencils
+are there pencils - - - - NUMBER_0 - NEW_S
+placed PERSON_0 pencils drawer - - - NUMBER_1 - NEW_S
+are pencils there - - - - total how_many NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x bushes = NUMBER_0 bushes + NUMBER_1 bushes
+are there bushes - - - - NUMBER_0 - NEW_S
+plant workers bushes - - - - NUMBER_1 - NEW_S
+have park bushes - - - - - - NEW_S
+finished - workers - - - - how_many - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = NUMBER_0 dollars - ( NUMBER_0 * NUMBER_1 % * y )
+charges - home - MONEY_1 - - MONEY_0 - NEW_S
+oov - home - - - - PERCENT_0 - SAME_S
+was what cost - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = ( ( NUMBER_0 dollars * NUMBER_2 pounds ) + ( NUMBER_1 dollars * NUMBER_3 pounds ) ) / ( NUMBER_2 + NUMBER_3 )
+costs - MONEY_1 - MONEY_1 - - MONEY_0 - NEW_S
+cost - oov MONEY_1 - - - MONEY_2 - SAME_S
+costs - oov MONEY_1 - - - NUMBER_2 - SAME_S
+cost - oov MONEY_1 - - - MONEY_2 - SAME_S
+costs - oov MONEY_1 - - - NUMBER_2 - SAME_S
+
+x % = ( 1.0 - ( ( 1.0 + ( NUMBER_0 % * 0.01 ) ) * ( 1.0 - ( NUMBER_0 * 0.01 ) ) ) ) * 100.0
+oov - trip - - - - - - NEW_S
+oov - she oov - - - MONEY_0 - NEW_S
+oov - them oov - - - - - SAME_S
+gave she ride - - - - NUMBER_1 - NEW_S
+was it number - - - - - - SAME_S
+
+x roses = NUMBER_1 roses - NUMBER_0 roses
+has PERSON_0 roses - - - - - - NEW_S
+has she them - - - - NUMBER_1 - NEW_S
+need she NUMBER_2 - - - - - - SAME_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+( x pages - NUMBER_0 pages ) * ( 1.0 - NUMBER_1 oov ) = NUMBER_2 pages
+oov i oov - - - - - - NEW_S
+is NUMBER_0 that - - - - NUMBER_0 - NEW_S
+is this difference - - - - NUMBER_1 - SAME_S
+is what amount - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+( 2.0 * x meters ) - NUMBER_1 meters = NUMBER_0 meters
+is NUMBER_0 number - - - - NUMBER_0 NUMBER_1 NEW_S
+is what number - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+( NUMBER_0 dollars * NUMBER_1 hours ) + ( ( oov * NUMBER_0 ) * x hours ) = NUMBER_3 dollars
+is book cost - - - - MONEY_0 NUMBER_0 NEW_S
+is what cost - - - - NUMBER_0 - NEW_S
+is what cost - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x pennies = NUMBER_0 pennies - NUMBER_1 pennies
+had PERSON_0 pennies - - - - NUMBER_0 NUMBER_1 NEW_S
+borrowed dad pennies PERSON_0 - - - NUMBER_2 - NEW_S
+have she pennies - - - - how_many - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+
+x = ( NUMBER_0 dollars * NUMBER_1 hours ) + ( NUMBER_2 dollars * ( NUMBER_3 hours - NUMBER_1 ) )
+costs - oov MONEY_1 - - - MONEY_0 - NEW_S
+was he NUMBER_0 - - - - - - NEW_S
+read he wants - - - - DURATION_0 - SAME_S
+need she money - - - - - - NEW_S
+<NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL>
+

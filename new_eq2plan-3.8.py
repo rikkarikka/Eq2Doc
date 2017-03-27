@@ -179,7 +179,7 @@ def val(net,src,tgt,eq_v,out_v):
     tstr += ' '.join([ev[x] for x in s]) + '\n'
     for j in range(5):
       tstr += ' '.join([out_v[int(outputs[(j*10)+k].data[0])] for k in range(10)]) + '\n'
-    print(tstr)
+    #print(tstr)
     ostr += tstr + '\n'
   net.unset_gen()
   return ostr
@@ -193,8 +193,8 @@ def train():
   train_idx,dev_idx,_ = tdt_split(fns)
   train_eqs = [x for i,x in enumerate(eqs) if i in train_idx]
   train_dps = [x for i,x in enumerate(dps) if i in train_idx]
-  dev_eqs = [x for i,x in enumerate(eqs) if i in dev_idx]
-  dev_dps = [x for i,x in enumerate(dps) if i in dev_idx]
+  dev_eqs = [eqs[i] for i in dev_idx]
+  dev_dps = [dps[i] for i in dev_idx]
 
   eq_v = vocab(train_eqs,False)
   out_v = dp_vocab_2(train_dps)
@@ -218,6 +218,7 @@ def train():
     do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
 
     if epoch % 10 == 9 and epoch > 50:
+      print("Writing %d checkpoint" % epoch)
       checkpoint = {
         'model': net,
         'vocabs': (eq_v,out_v),
