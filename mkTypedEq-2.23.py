@@ -6,7 +6,7 @@ import re
 from collections import Counter, OrderedDict, defaultdict
 from utils import *
 
-with open("data/MathProblems.json") as f:
+with open("data/math_data/MathProblems.json") as f:
   jdata = json.load(f)
 
 copulas = ['is','am','are','was','were','be','being','been']
@@ -44,7 +44,7 @@ def clean_eq(eq):
   return e
 
 def fallback(sidx,pidx):
-  with open("data/parses/"+str(pidx)+".txt.json") as f:
+  with open("data/math_data/parses/"+str(pidx)+".txt.json") as f:
     parse = json.load(f)
   s_parse = parse["sentences"][sidx]
   root_ = [x for x in s_parse["collapsed-ccprocessed-dependencies"] if x['governorGloss'] == "ROOT"][0]
@@ -288,10 +288,10 @@ def get_eq(fn):
   eq = jdat[0]['lEquations'][0]
   eq = clean_eq(eq)
   print(fn)
-  with open("data/splits/"+str(fn)+".txt.out") as f:
+  with open("data/math_data/splits/"+str(fn)+".txt.out") as f:
     txt = float_txt(f.read(),eq)
   print(txt)
-  with open("data/deps/"+str(fn)+".deps") as f:
+  with open("data/math_data/deps/"+str(fn)+".deps") as f:
     parse,srl = process_parse(f.read(),txt,fn)
   
 
@@ -299,29 +299,37 @@ def get_eq(fn):
     eq = type_eq(eq,parse)
 
   eq = " ".join(eq).split(" ")
-  eq = ["NUMBER" if toFloat(x) else x for x in eq]
-  print(eq)
+
+  # order numbers by apperaance in txt
+  eqnums = [toFloat(x) for x in eq if toFloat(x)]
+  txtnums = [toFloat(x) for x in jdat[0]['sQuestion'].split(" ") if toFloat(x) in eqnums]
+  eq = ["NUMBER_"+str(txtnums.index(toFloat(x))) if toFloat(x) in txtnums else x for x in eq]
 
   return eq
 
 def main():
-  with open("pickles/anonMathData-2.23.pickle",'rb') as f:
-    fns,srcs,pasts,targs,dps = pickle.load(f)
+  with open("pickles/math.pickle",'rb') as f:
+    fns,srcs,targs = pickle.load(f)
 
+  herefns = []
   eqs = []
   heredps = []
+  hereTargets = []
   for i in range(len(fns)):
     f = fns[i]
-    dp = dps[i]
+    dp = srcs[i]
     eq = get_eq(f)
+    print(eq)
     if eq == -1:
       continue
     else:
+      herefns.append(f)
       heredps.append(dp)
       eqs.append(eq)
+      hereTargets.append(targs[i])
 
   with open("pickles/eq2planData.pickle",'wb') as f:
-    pickle.dump((eqs,heredps),f)
+    pickle.dump((herefns,eqs,heredps,hereTargets),f)
 
 if __name__=="__main__":
   main()
