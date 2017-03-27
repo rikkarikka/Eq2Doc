@@ -8,7 +8,7 @@ from collections import Counter
 from random import shuffle
 import numpy as np
 from eq2planNet2 import network_2 as network
-from get_config import CUDA_ON,bsz
+from get_config import CUDA_ON,bsz,EPOCHS
 
 def tdt_split(x,fn="eq2planData"):
   try:
@@ -216,7 +216,7 @@ def train():
     net.cuda()
     criterion.cuda()
 
-  for epoch in range(200):
+  for epoch in range(EPOCHS):
     do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
 
     if epoch % 10 == 9 and epoch > 50:
