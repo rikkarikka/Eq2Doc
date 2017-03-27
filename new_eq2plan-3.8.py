@@ -10,29 +10,25 @@ import numpy as np
 from eq2planNet2 import network_2 as network
 from get_config import CUDA_ON,bsz
 
-
-def make_splits():
+def tdt_split(x,fn="eq2planData"):
   try:
-    with open("data/train_idx") as f:
-      train_idx = [int(x) for x in f.readlines()]
-    with open("data/dev_idx") as f:
-      dev_idx = [int(x) for x in f.readlines()]
+    with open("pickles/"+fn+"_split.pickle",'rb') as f:
+      train, dev, test = pickle.load(f)
+    print("loaded train dev test")
   except:
-    idxs = list(range(len(eqs)))
-    dev_size = len(eqs)//5
-    from random import shuffle
-    shuffle(idxs)
-    dev_idx = idxs[:dev_size]
-    test_idx = idxs[dev_size:dev_size*2]
-    train_idx = idxs[dev_size*2:]
-    with open("data/train_idx",'w') as f:
-      f.write("\n".join([str(x) for x in train_idx]))
-    with open("data/test_idx",'w') as f:
-      f.write("\n".join([str(x) for x in test_idx]))
-    with open("data/dev_idx",'w') as f:
-      f.write("\n".join([str(x) for x in dev_idx]))
+    print("Creating Train Dev Test split")
+    shuffle(x)
+    devsize = len(x)//10
+    print(devsize)
+    dev = x[:devsize]
+    tsize = devsize*2
+    test = x[devsize:tsize]
+    train = x[tsize:]
+    with open("pickles/"+fn+"_split.pickle",'wb') as f:
+      pickle.dump((train,dev,test),f)
+  return train, dev, test
 
-  return train_idx,dev_idx
+
 
 def vocab(l,trim=True):
   l = [x for y in l for x in y]
@@ -159,7 +155,7 @@ def do_epoch(net,optimizer,criterion,src,tgt_flat,batches,epoch):
       for j in range(50):
         loss += criterion(outputs[j],outtgt[:,j])
       loss.backward()
-      print(loss.data)
+      #print(loss.data)
       return loss
     optimizer.step(closure)
     
@@ -191,10 +187,10 @@ def val(net,src,tgt,eq_v,out_v):
 
 def train():
   with open("pickles/eq2planData.pickle",'rb') as f:
-    eqs, dps = pickle.load(f)
+    fns, eqs, dps, _ = pickle.load(f)
 
   
-  train_idx,dev_idx = make_splits()
+  train_idx,dev_idx,_ = tdt_split(fns)
   train_eqs = [x for i,x in enumerate(eqs) if i in train_idx]
   train_dps = [x for i,x in enumerate(dps) if i in train_idx]
   dev_eqs = [x for i,x in enumerate(eqs) if i in dev_idx]
