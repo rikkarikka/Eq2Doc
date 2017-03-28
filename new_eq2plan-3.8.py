@@ -240,6 +240,10 @@ def train(out_dir):
       with open(out_dir+"/val-"+str(acc)+"-e"+str(epoch)+".out",'w') as f:
         f.write(ostr)
 
+def usage():
+  print("Usage: babababa")
+  exit()
+
 if __name__=="__main__":
 
   if sys.argv[1] == "train":
