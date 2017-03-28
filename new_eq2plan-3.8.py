@@ -177,10 +177,17 @@ def val(net,src,tgt,eq_v,out_v):
     else:
       outputs,_ = net(Variable(torch.LongTensor(s).view(1,-1)),Variable(dps),hc,hc_2)
     tstr = ""
-    tstr += ' '.join([ev[x] for x in s]) + '\n'
+    #tstr += ' '.join([ev[x] for x in s]) + '\n'
     acc += sum([int(outputs[i].data[0]==tgt[c][i]) for i in range(50)])/50
     for j in range(5):
-      tstr += ' '.join([out_v[int(outputs[(j*10)+k].data[0])] for k in range(10)]) + '\n'
+      if out_v[int(outputs[(j*10)].data[0])] == "<NULL>":
+        break
+      tstr = ' '.join([out_v[int(outputs[(j*10)+k].data[0])] for k in range(9)])
+      if out_v[int(outputs[(j*10)+9].data[0])] == "NEW_S":
+        tstr += " EOS "
+      else:
+        tstr += " EOP "
+
     #print(tstr)
     ostr += tstr + '\n'
   net.unset_gen()
@@ -219,7 +226,8 @@ def train():
   for epoch in range(EPOCHS):
     do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
 
-    if epoch % 10 == 9 and epoch > 50:
+    ostr,acc = val(net,dev_src,dev_tgt,eq_v,out_v)
+    if epoch % 10 == 9:
       print("Writing %d checkpoint" % epoch)
       checkpoint = {
         'model': net,
@@ -230,7 +238,7 @@ def train():
       torch.save(checkpoint, "saved_models/"+str(epoch)+'checkpoint.mod')
       ostr,acc = val(net,dev_src,dev_tgt,eq_v,out_v)
       print("Valid Accuracy: %f" %acc)
-      with open(str(epoch)+"-val-"+str(acc)+".out",'w') as f:
+      with open("val-"+str(acc)+"-e"+str(epoch)+".out",'w') as f:
         f.write(ostr)
 
 if __name__=="__main__":
