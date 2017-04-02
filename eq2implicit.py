@@ -42,5 +42,8 @@ def load_data():
 
 def main():
   m = net()
-  train-tgts,val-tgts,train-src,val-src = load_data()
+  train_tgts,val_tgts,train_src,val_src = load_data()
+
+if __name__=="__main__":
+  main()
   
