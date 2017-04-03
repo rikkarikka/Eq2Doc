@@ -1,0 +1,123 @@
+have PERSON_0 potatoes - - - - - - EOS hold - workers - - - - NUMBER_0 how_many EOS get - there - - - - how_many - EOS 
+are there boxes - - - - NUMBER_0 NUMBER_1 EOS are there boxes - - - - NUMBER_1 how_many EOP have PERSON_0 boxes - - - - how_many - EOS 
+walks PERSON_0 miles miles - - - NUMBER_0 NUMBER_1 EOS traveled - miles miles - - - NUMBER_1 - EOS travel it gallons - - - - - - EOP left restaurant - - - - - - - EOS walk PERSON_0 rest miles - - - NUMBER_2 - EOP 
+are there animals - - - - NUMBER_0 - EOS is it DURATION_0 - - - - - - EOS give PERSON_0 pieces pieces - - - how_many - EOS 
+had PERSON_0 MONEY_1 - - - - MONEY_0 - EOS gave he MONEY_1 - - - - NUMBER_0 MONEY_1 EOS spend - home - - - - MONEY_2 how_much EOS spend PERSON_0 - - - - - - - EOS 
+have PERSON_0 candies - - - - NUMBER_1 - EOS have PERSON_0 candies - - - - NUMBER_1 - EOS have PERSON_0 candies - - - - how_many - EOS 
+have students cookies - - - - - - EOS earned they pick - - - - - - EOS are there houses - - - - NUMBER_0 - EOS put PERSON_0 NUMBER_1 - - - - NUMBER_1 how_many EOS have they cans - - - - - - EOP 
+have PERSON_0 skittles - - - - - - EOS have PERSON_0 skittles - - - - NUMBER_1 - EOP have PERSON_0 skittles - - - - how_many - EOS 
+bought PERSON_0 packages - - - - NUMBER_0 - EOS need - paper - - - - - - EOS 
+paid family mile MONEY_0 - - - MONEY_1 - EOS was fund worth - - - - MONEY_0 - EOP paid she MONEY_0 ones - - - MONEY_1 - EOP spend PERSON_0 money - - - - how_much - EOS 
+included - MONEY_1 bill - - - MONEY_0 MONEY_1 EOS went - MONEY_1 district - - - MONEY_2 MONEY_2 EOS is what MONEY_3 - - - - - - EOP 
+are there birds - - - - NUMBER_0 NUMBER_1 EOS were there birds - - - - NUMBER_1 NUMBER_2 EOS were there oov - - - - how_many - EOS 
+are there scissors - - - - NUMBER_0 NUMBER_1 EOS have they cats - - - - how_many - EOS 
+had school oov - - - - NUMBER_0 - EOS picked he them - - - - NUMBER_1 - EOS put he them garden - - - NUMBER_2 - EOP have he rest - - - - how_many - EOS 
+have PERSON_0 PERSON_0 - - - - - - EOS earned she NUMBER_0 - - - - NUMBER_0 NUMBER_1 EOS have PERSON_0 caps - - - - in_all how_many EOS 
+has PERSON_0 oov - - - - - - EOS buy PERSON_0 NUMBER_1 - - - - NUMBER_0 - EOP costs - NUMBER_1 - - - - NUMBER_0 NUMBER_1 EOP have PERSON_0 buy - - - - how_many - EOS 
+are there pencils - - - - NUMBER_0 - EOS has he pencils - - - - NUMBER_1 more EOS have PERSON_0 pencils - - - - in_all how_many EOS 
+made PERSON_0 cup - - - - NUMBER_0 - EOS added - cup - - - - NUMBER_0 - EOS used she cup - - - - NUMBER_0 - EOS make - they - - - - - - EOP use PERSON_0 oov - - - - - - EOS 
+are there eggs - - - - NUMBER_0 - EOS are eggs eggs - - - - NUMBER_1 - EOS are eggs there - - - - in_all how_many EOS 
+had store crayons - - - - NUMBER_0 NUMBER_1 EOS gave he crayons PERSON_1 - - - NUMBER_1 more EOS has he cupcakes - - - - NUMBER_2 more EOS gave you lives - - - - NUMBER_1 more EOS are many there - - - - how_many - EOS 
+are there boxes - - - - NUMBER_0 - EOS put - oranges - - - - - - EOS are boxes oranges - - - - NUMBER_1 - EOP comes - eggs help - - - - - EOS are boxes oranges - - - - - - EOP 
+drove PERSON_0 miles - - - - NUMBER_0 - EOS drove they miles - - - - NUMBER_1 - EOS drive they miles - - - - - - EOP 
+oov oov MONEY_1 - - - - MONEY_0 MONEY_2 EOS is what MONEY_1 - - - - - - EOP has he money - - - - how_much - EOS 
+bought PERSON_0 skittles - - - - NUMBER_0 - EOS buy he buy - - - - NUMBER_1 NUMBER_2 EOP buy he money - - - - have_left how_many EOS needs <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> EOP 
+have PERSON_0 marbles - - - - - - EOS buy PERSON_0 marbles - - - - DATE_1 - EOS have they marbles - - - - in_all how_many EOS 
+are there calories - - - - NUMBER_0 - EOS are there calories - - - - NUMBER_1 how_many EOS 
+bought PERSON_0 MONEY_1 - - - - MONEY_0 - EOS mowing - lawns - - - - - - EOS made he MONEY_1 - - - - MONEY_2 - EOP paid he MONEY_1 - MONEY_1 - - MONEY_2 - EOS spend he - - much - - - - EOS 
+are there pencils - - - - NUMBER_1 - EOS holds PERSON_1 pencils - - - - NUMBER_1 - EOS have PERSON_0 pencils - - - - how_many - EOS 
+bought PERSON_0 oov - MONEY_1 - - MONEY_0 - EOS cost PERCENT_1 cost - MONEY_1 - - MONEY_0 - EOS left price money - - - - - - EOP cost - cost MONEY_2 - - - MONEY_0 - EOS left price money - - - - - - EOP 
+had PERSON_0 problems - - - - NUMBER_0 NUMBER_1 EOS deleted she problems - - - - NUMBER_2 - EOS take it - - - - - - - EOP take it - - - - - - - EOS take it - - - - - - - EOP 
+has PERSON_0 erasers - - - - NUMBER_0 - EOS are there erasers - - - - NUMBER_1 NUMBER_2 EOS are there erasers - - - - NUMBER_2 - EOP are there erasers - - - - NUMBER_2 - EOP are there erasers - - - - NUMBER_2 - EOP 
+has PERSON_0 cards - - - - NUMBER_0 NUMBER_1 EOS buys PERSON_0 cards - - - - NUMBER_2 - EOS have PERSON_0 cards - - - - how_many - EOS 
+are there marbles - - - - NUMBER_0 - EOS added - NUMBER_1 - - - - NUMBER_1 more EOS have PERSON_0 marbles - - - - in_all how_many EOS 
+are there blocks - - - - NUMBER_0 - EOS are there children - - - - NUMBER_1 how_many EOS have PERSON_0 marbles - - - - how_many - EOS 
+bought PERSON_0 oov - - - - NUMBER_0 - EOS has he collection - - - - NUMBER_1 - EOS cost - oov tickets - - - how_many - EOS make - - - - - - how_many - EOS 
+are there flowers - - - - NUMBER_0 NUMBER_1 EOS are there children - - - - NUMBER_1 how_many EOS are boys green - - - - how_many - EOS 
+had PERSON_0 stickers - - - - NUMBER_0 - EOS has rate pages - - - - NUMBER_1 total EOS decided PERSON_0 pages - - - - - - EOP have PERSON_0 pages - - - - NUMBER_2 - EOP have PERSON_0 pages - - - - NUMBER_2 how_many EOS 
+spent PERSON_0 toy - MONEY_0 - - MONEY_1 MONEY_2 EOS cost - cage MONEY_0 - - - MONEY_2 MONEY_3 EOS spend PERSON_0 - - - - - how_much - EOS 
+have PERSON_0 total - - - - - - EOS have she total - - - - - - EOP have she total - - - - NUMBER_1 - EOS have PERSON_0 fish - - - - how_many - EOS 
+is i NUMBER_0 - - - - NUMBER_0 NUMBER_1 EOS was sandbox oov - - - - - - EOP 
+are there marbles - - - - NUMBER_0 NUMBER_1 EOS have PERSON_0 marbles - - - - how_many - EOS 
+have PERSON_0 shelves - - - - NUMBER_0 - EOS have he them - - - - NUMBER_1 more EOS have he cans - - - - how_many - EOS 
+scored you cookies - - - - NUMBER_0 - EOS scored you NUMBER_1 - - - - NUMBER_0 - EOS scored teacher number - - - - NUMBER_0 - EOS hold you them - - - - NUMBER_0 - EOP hold you split - - - - - - EOS 
+had chef sale - - - - NUMBER_0 - EOS had chef number - - - - NUMBER_1 - EOS pick PERSON_0 oov - - - - how_many - EOS 
+had PERSON_0 pennies - - - - NUMBER_0 NUMBER_1 EOS borrowed dad pennies PERSON_0 - - - NUMBER_2 added EOS have she pennies - - - - how_many - EOS 
+find - product - - - - - - EOS oov PERSON_0 MONEY_1 - - - - DURATION_0 - EOS oov PERSON_0 MONEY_1 - - - - NUMBER_2 - EOS be what price - - - - - - EOS 
+are there candies - - - - NUMBER_0 - EOS have PERSON_0 candies - - - - NUMBER_1 - EOS have PERSON_0 caps - - - - how_many - EOS 
+has PERSON_0 watermelons - - - - NUMBER_0 NUMBER_1 EOS buys PERSON_0 watermelons - - - - NUMBER_2 - EOS have they watermelons - - - - total how_many EOS 
+making - pastries - - - - NUMBER_0 - EOS used she bags - - - - NUMBER_0 NUMBER_1 EOP use they cream onions - - - total total EOP 
+was tall inches - - - - NUMBER_0 - EOS gets she them - - - - NUMBER_1 - EOS was longer line - - - - how_much - EOS 
+had PERSON_0 total - - - - - - EOS buy he total - - - - - - EOP got he oov - - - - NUMBER_0 - EOP costs - oov - - - - NUMBER_0 NUMBER_1 EOP costs - oov - - - - NUMBER_0 NUMBER_1 EOP 
+spent you oov - - - - MONEY_0 DURATION_0 EOS oov PERSON_0 DURATION_0 - - - - MONEY_3 DURATION_0 EOS 
+increased - NUMBER_0 NUMBER_1 - - - NUMBER_1 more EOS find - PERSON_0 - - - - how_many - EOS 
+has PERSON_0 seashells - - - - NUMBER_0 - EOS has she seashell - - - - NUMBER_1 - EOS give he seashells PERSON_1 - - - how_many - EOS 
+has PERSON_0 marbles - - - - NUMBER_0 - EOS has PERSON_1 muffins - - - - NUMBER_1 - EOS have PERSON_1 muffins - - - - how_many - EOS 
+pays car MONEY_1 - - - - MONEY_0 - EOS pays account pair - - - - MONEY_2 - EOS left - money - - - - - - EOS 
+are there candies - - - - NUMBER_0 - EOS have they candies - - - - NUMBER_1 how_many EOS 
+ordered PERSON_0 pizzas - - - - NUMBER_0 - EOS has child pizzas - pizzas - - NUMBER_1 total EOP take there pizzas - - - - how_many - EOS 
+has PERSON_0 balloons - - - - NUMBER_0 NUMBER_1 EOS lost - balloons - - - - NUMBER_2 - EOS have PERSON_0 balloons - - - - how_many - EOS 
+had store kilometers - - - - NUMBER_0 - EOS oov - them house - - - NUMBER_1 how_many EOS pick they - - - - - how_many - EOS 
+have PERSON_0 limes - - - - - - EOS has he seashells - - - - NUMBER_0 - EOS have he them - - - - how_many - EOS 
+have PERSON_0 marbles - - - - - - EOS buy PERSON_0 marbles - - - - NUMBER_1 - EOS have PERSON_0 marbles - - - - how_many - EOS 
+playing - PERSON_0 - - - - - - EOS bought he cartons - MONEY_1 - - NUMBER_0 NUMBER_1 EOS spent he tickets - - - - NUMBER_2 how_many EOS use they tickets - - - - - - EOP 
+had you oov - - - - NUMBER_0 NUMBER_0 EOS NUMBER_1 he cut make - - - NUMBER_1 - EOS be team amount - - - - - - EOP 
+have PERSON_0 cards - - - - - - EOS have PERSON_0 cards - - - - how_many - EOS 
+needs shop total - - - - - - EOS got he NUMBER_0 friends - - - NUMBER_0 NUMBER_1 EOS go PERSON_0 - money - - - - - EOS 
+are there crayons - - - - NUMBER_0 NUMBER_1 EOS puts PERSON_0 crayons - - - - NUMBER_1 how_many EOS 
+are apples caps - - - - NUMBER_0 - EOS have PERSON_0 apples - - - - NUMBER_2 - EOS make they cards - - - - - - EOS are students oov - - - - how_many - EOS 
+bought PERSON_0 tickets - - - - - - EOS oov PERSON_0 - - - - - - - EOS give he buckets - - - - NUMBER_0 - EOP left he - - - - - NUMBER_1 how_much EOS left PERSON_0 much - - - - - - EOP 
+produced oov MONEY_1 - - - - MONEY_0 - EOS ate watermelon MONEY_1 - - - - MONEY_2 - EOS was watermelon MONEY_1 - - - - MONEY_2 - EOP remains - fruit - - - - how_much - EOS 
+are there books - - - - NUMBER_0 - EOS has PERSON_1 books - - - - NUMBER_1 NUMBER_2 EOS have books books - - - - how_many - EOS 
+are there people - - - - NUMBER_0 - EOS is NUMBER_1 total - - - - NUMBER_1 - EOS is what number - - - - - - EOS make they - - - - - - - EOP is there people - - - - NUMBER_1 - EOP 
+added - cup batch - - - NUMBER_0 added EOS added PERSON_0 oov - - - - in_all how_many EOS 
+had PERSON_0 cards - - - - NUMBER_0 NUMBER_1 EOS are crayons cards - - - - NUMBER_1 how_many EOS 
+had PERSON_0 problems - - - - NUMBER_0 - EOS sold he tables - - - - NUMBER_1 - EOP were pictures rest together - - - NUMBER_2 - EOP were there cages - - - - NUMBER_2 - EOP were pictures rest - - - - NUMBER_2 - EOP 
+are there students - - - - NUMBER_0 - EOS are there students - - - - NUMBER_1 NUMBER_1 EOS are students there - - - - how_many - EOS 
+bought PERSON_0 games - - - - NUMBER_0 NUMBER_1 EOS eat - games - - - - NUMBER_2 - EOS left - games - - - - NUMBER_2 - EOP left - games - - - - how_many - EOS have PERSON_0 games - - - - how_many - EOS 
+bought PERSON_0 books - - - - NUMBER_0 - EOS put - NUMBER_1 - - - - NUMBER_1 - EOS left - more - - - - how_many - EOP 
+oov PERSON_0 - - - - - - - EOS scored PERSON_0 points - - - - NUMBER_0 NUMBER_1 EOS have PERSON_0 birds - - - - how_many - EOS 
+are there pencils - - - - NUMBER_0 NUMBER_1 EOS placed PERSON_0 pencils drawer - - - NUMBER_2 - EOS are pencils there - - - - total how_many EOS 
+spent PERSON_0 toy - MONEY_0 - - MONEY_1 MONEY_2 EOS cost - cage MONEY_0 - - - MONEY_2 MONEY_3 EOS spend PERSON_0 - - - - - how_much - EOS 
+are there girls - - - - NUMBER_0 NUMBER_1 EOS are there girls - - - - NUMBER_1 how_many EOS 
+are there scissors - - - - NUMBER_0 NUMBER_1 EOS are there scissors - - - - NUMBER_1 - EOS have they turnips - - - - in_all how_many EOS 
+ordered starting oov oov - - - NUMBER_0 NUMBER_0 EOS placed there oov - - - - NUMBER_0 NUMBER_0 EOS finds they - - - - - NUMBER_0 NUMBER_1 EOP use what - - - - - total - EOP 
+have PERSON_0 blocks - - - - - - EOS oov she oov - - - - - - EOS have PERSON_0 blocks - - - - NUMBER_1 - EOP have he blocks - - - - - - EOS have PERSON_0 blocks - - - - NUMBER_2 - EOS 
+ran PERSON_0 mile - - - - NUMBER_0 - EOS walked PERSON_0 mile - - - - NUMBER_1 - EOP run PERSON_0 much - - - - - - EOS walk PERSON_0 - - - - - how_much - EOP 
+are there potatoes - - - - NUMBER_0 NUMBER_1 EOS took PERSON_1 NUMBER_1 - - - - NUMBER_1 - EOS left he PERSON_2 - - - - how_many - EOS 
+oov PERSON_0 - sale - - - - - EOS buy PERSON_0 chairs - - - - - - EOS buy you need - - - - NUMBER_0 how_many EOS oov - they - - - - - - EOP needs you need - - - - how_many - EOS 
+were there pictures - MONEY_1 - - NUMBER_0 NUMBER_1 EOS deleted she pictures - - - - NUMBER_2 how_many EOS have she - - - - - - - EOP 
+are oov oov - - - - - - EOS hold he - - - - - - - EOS hold he - bags - - - - - EOS hold he - - - - - - - EOS hold he - - - - - - - EOS 
+ate PERSON_0 pints - - - - NUMBER_0 - EOS ate he them - - - - NUMBER_1 NUMBER_2 EOS left - them - - - - NUMBER_2 - EOS left - them - - - - NUMBER_2 - EOS left - them - - - - NUMBER_2 - EOS 
+had PERSON_0 tickets - - - - MONEY_0 - EOS oov - tickets - - - - NUMBER_0 NUMBER_1 EOS take he money - - - - - - EOP left he tickets - - - - - - EOP 
+have PERSON_0 skittles - - - - - - EOS have PERSON_0 skittles - - - - NUMBER_1 - EOP have PERSON_0 skittles - - - - how_many - EOS 
+shopping PERSON_0 boxes - - - - NUMBER_0 NUMBER_1 EOS find - number - - - - - - EOS 
+are oov candies - - - - NUMBER_0 - EOS oov they NUMBER_1 apples - - - NUMBER_1 more EOS make PERSON_0 cards - - - - - - EOS make PERSON_0 apples - - - - how_many - EOS make PERSON_0 - - - - - - - EOP 
+are oov trip - - - - - - EOS hold dogs trip - - - - - - EOS are oov cans - - - - - - EOP are oov cans - - - - NUMBER_0 NUMBER_1 EOP have they cats - - - - how_many - EOS 
+oov oov oov - - - - - - EOS oov you MONEY_1 - - - - MONEY_0 - EOS oov he oov - - - - PERCENT_0 - EOS oov he much - - - - - - EOS 
+is NUMBER_0 points - - - - NUMBER_0 per EOS oov - PERSON_0 - - - - NUMBER_2 how_many EOS 
+ate PERSON_0 apples - - - - NUMBER_0 DURATION_0 EOS build i - - - - - DURATION_0 how_many EOS 
+had trees game - - - - NUMBER_0 NUMBER_1 EOS put you average - - - - NUMBER_2 more EOP find PERSON_0 NUMBER_2 - - - - - - EOS 
+are there crayons - - - - NUMBER_0 NUMBER_1 EOS puts PERSON_0 crayons - - - - NUMBER_1 NUMBER_2 EOP have PERSON_0 crayons - - - - total how_many EOS 
+grew - balls - - - - NUMBER_0 NUMBER_1 EOS weighed - ball - pounds - - NUMBER_1 NUMBER_2 EOS weighed - ball - pounds - - NUMBER_2 MONEY_2 EOP places PERSON_0 balls scale - - - - - EOS read scale what - - - - - - EOP 
+are there farm - - - - NUMBER_0 NUMBER_1 EOS are there farm - - - - NUMBER_1 how_many EOS have PERSON_0 balloons - - - - total how_many EOS 
+had PERSON_0 books - - - - NUMBER_0 NUMBER_1 EOS sold he books - - - - - - EOS put he books - - - - NUMBER_2 more EOS are library shelf - - - - - - EOS 
+bought PERSON_0 total - - - - NUMBER_0 - EOS was number total - - - - NUMBER_1 - EOS 
+had PERSON_0 kittens - pool - - NUMBER_0 - EOS served dog gallon - - - - NUMBER_1 - EOS plant she them - - - - NUMBER_0 NUMBER_1 EOP have they money - - - - total how_many EOS 
+had PERSON_0 gumballs - - - - NUMBER_0 - EOS ate he packs - - - - NUMBER_1 - EOS eat person boxes - - - - in_all how_many EOS 
+are there bushes - - - - NUMBER_0 - EOS plant workers bushes - - - - NUMBER_1 - EOS have park bushes - - - - - - EOS finished - workers - - - - how_many - EOP 
+had PERSON_0 MONEY_1 - - - - MONEY_0 DURATION_0 EOS oov - oov MONEY_1 - - - - - EOP make PERSON_0 - - - - - - - EOS make PERSON_0 money - - - - - DURATION_0 EOP 
+had PERSON_0 total - - - - NUMBER_0 NUMBER_1 EOS have PERSON_0 's - - - - in_all how_many EOS 
+had chef sale - - - - NUMBER_0 - EOS had chef number - - - - NUMBER_1 - EOS pick PERSON_0 oov - - - - how_many - EOS 
+gains oov MONEY_1 - pounds - - NUMBER_0 NUMBER_1 EOS weigh piece NUMBER_1 - - - - - - EOP weigh - them them pounds - - NUMBER_2 how_many EOS fill she money - - - - - - EOP 
+has PERSON_0 marbles - - - - NUMBER_0 NUMBER_1 EOS has PERSON_1 marbles - - - - NUMBER_2 - EOS have PERSON_0 marbles - - - - how_many - EOS 
+oov oov oov - - - - - - EOS oov they oov - - - - - - EOS oov they oov - - - - NUMBER_0 how_many EOS 
+bought PERSON_0 marbles - - - - NUMBER_0 NUMBER_1 EOS cost - water - - - - - - EOS has she money - - - - NUMBER_3 - EOP adopted - water - - - - - - EOS grow she bushes - - - - total - EOS 
+had PERSON_0 NUMBER_0 - - - - NUMBER_0 NUMBER_1 EOS gave he NUMBER_0 NUMBER_1 - - - NUMBER_1 - EOS left he - - - - - - - EOS 
+had PERSON_0 DURATION_1 - - - - DURATION_0 - EOS selling - mom - - - - - - EOS had he that - - - - NUMBER_0 - EOP needs you need - - - - how_many - EOS 
+sorted - salad - - - - - - EOS buy PERSON_0 pounds - - - - NUMBER_0 total EOP use PERSON_0 pounds - - - - in_all how_much EOS 
+are oov caps - - - - NUMBER_0 - EOS bought PERSON_1 caps - - - - NUMBER_0 more EOS have PERSON_0 apples - - - - in_all how_many EOS 
+are there oranges - - - - NUMBER_0 - EOS put PERSON_0 oranges - - - - NUMBER_1 - EOS have PERSON_0 oranges - - - - how_many - EOS 
+have PERSON_0 cookies - - - - - - EOS have she quarters - - - - NUMBER_0 - EOS have she quarters - - - - how_many - EOS 
+has PERSON_0 cats - - - - NUMBER_0 - EOS have he books - - - - NUMBER_2 how_many EOS 
+had PERSON_0 books - - - - NUMBER_0 - EOS sold he them - - - - NUMBER_1 - EOS decided he them - - - - - - EOP were people rest - - - - NUMBER_2 - EOP packed <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> <NULL> EOP 
