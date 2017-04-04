@@ -4,6 +4,16 @@ import torch.optim as optim
 from torch.autograd import Variable
 import GlobalAttention as GA
 from get_config import CUDA_ON,bsz
+import plan_opts as opt
+
+class network(nnModule):
+  def __init__(self):
+    super().__init__()
+    self.somax = nn.Softmax()
+    self.emb = nn.Embedding(opt.vocab_size,opt.emb_size,padding_idx=0)
+    self.brnn = nn.LSTM(opt.emb_size,opt.h_size//2,batch_first=True,bidirectional=True)
+
+
 
 class network_2(nn.Module):
   def __init__(self,eq_v_size,out_v_size,emb_size=100,h_size=100):
