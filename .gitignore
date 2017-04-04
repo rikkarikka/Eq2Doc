@@ -4,3 +4,5 @@ data/*
 pickles/*
 *.swp
 get_config.py
+saved_models/*
+out/*

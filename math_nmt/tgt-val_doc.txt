@@ -1,0 +1,123 @@
+a garden has NUMBER_0 rows and NUMBER_1 columns of bean plans . how many plants are there in all ?
+PERSON_0 has NUMBER_0 boxes of erasers . each box holds NUMBER_1 erasers and there are NUMBER_2 boxes in a case . how many erasers does PERSON_0 have ?
+PERSON_0 ran NUMBER_0 miles and walked NUMBER_1 miles . how much farther did PERSON_0 run than walk ?
+MISC 's father and the senior ranger gathered firewood as they walked towards the lake in the park and brought with them sacks . if every sack can contain around NUMBER_0 pieces of wood , how many sacks were they able to fill if they gathered NUMBER_1 pieces of wood ?
+PERSON_0 had MONEY_1 . at the store he spent MONEY_3 on a new game . if he got another MONEY_1 for his allowance , how much money does he have DATE ?
+PERSON_0 has NUMBER_0 candies . he gives NUMBER_1 to PERSON_1 . how many candies will PERSON_0 have ?
+PERSON_0 goes fishing with PERSON_1 . PERSON_0 catches NUMBER_0 trout . PERSON_1 catches NUMBER_1 times as many trout as PERSON_0 . how many trout did PERSON_1 catch ?
+PERSON_0 starts with NUMBER_0 skittles . NUMBER_1 are eaten by a hippopotamus . how many skittles does PERSON_0 end with ?
+PERSON_0 has NUMBER_0 muffins , which he needs to box up into dozens . how many boxes does he need ?
+PERSON_0 earns DURATION cleaning houses . if he works for DURATION_0 , how much money will he make ?
+an mp3 player costs MONEY_1 . the sales tax is MONEY_1 . what is the percent of sales tax ?
+PERSON_0 uploaded NUMBER_0 pictures from her phone and NUMBER_1 from her camera to facebook . if she sorted the pics into NUMBER_1 different albums with the same amount of pics in each album , how many pictures were in each of the albums ?
+at LOCATION 's vacation wear , NUMBER the garments are bikinis and NUMBER_0 are trunks . what fraction of the garments are either bikinis or trunks ?
+a store had NUMBER_0 coloring books in stock . they ended up putting them on sale and getting rid of NUMBER_1 of them . the put the ones they still had onto shelves with NUMBER_2 on each shelf . how many shelves did they use ?
+PERSON_0 has NUMBER_0 old , brown sheets of drawing paper and NUMBER_1 old , yellow sheets of drawing paper . how many pieces of drawing paper does she have ?
+while taking inventory at her pastry shop , PERSON_0 realizes that she had NUMBER_0 of a box of baking powder DATE , but the supply is DATE down to NUMBER_1 of a box . how much more baking powder did PERSON_0 have DATE ?
+PERSON_0 has NUMBER_0 pencils . PERSON_1 gives NUMBER_1 more . how many pencils does PERSON_0 have in all ?
+PERSON_0 added NUMBER_0 cup of walnuts to a batch of trail mix . later , she added NUMBER_0 cup of almonds . how many cups of nuts did PERSON_0 put in the trail mix in all ?
+if there are NUMBER_0 eggs in a box and PERSON_0 puts NUMBER_1 more eggs inside , how many eggs are in the box ?
+there were NUMBER_0 friends playing a video game online when NUMBER_1 players quit . if each player left had NUMBER_1 lives , how many lives did they have total ?
+PERSON_0 has NUMBER_0 oranges stored in boxes . if there are NUMBER_1 boxes , how many oranges must go in each box ?
+mrs. PERSON_0 looked at her car 's odometer before a trip . the odometer showed that she had traveled NUMBER_0 miles . when she stopped for lunch , the odometer read NUMBER_1 . how many miles had she traveled ?
+a neighborhood grocer sells a mix of chocolate and carob candy . the chocolate cost MONEY_1 a pound and the carob costs MONEY_1 a pound . if MONEY_3 of the chocolate and MONEY_3 of the carob candy are used , what is the cost per pound of the mixture in dollars ?
+PERSON_0 has the following grades PERCENT_0 , PERCENT_1 , PERCENT and PERCENT on her NUMBER math quizzes . what grade would she need on her next math quiz to have an average of a PERCENT_2 ?
+PERSON_0 has NUMBER_0 yellow marbles . PERSON_1 has NUMBER_1 yellow marbles . how many yellow marbles do they have in all ?
+there are NUMBER_0 calories in a candy bar . how many NUMBER calories are there in NUMBER_1 candy bars ?
+PERSON_0 has MONEY_1 . how many more dollars does she have to earn to have MONEY_1 ?
+PERSON_0 had NUMBER_0 pencils . he gave NUMBER_1 pencils to PERSON_1 . how many pencils does PERSON_0 have left ?
+after the price of petroleum oil went up by PERCENT_0 , a consumer reduced his oil consumption by the same percent . by what percent would his petroleum bill be changed ?
+PERSON_0 had NUMBER_0 math problems and NUMBER_1 science problems for homework . if she finished NUMBER_2 of the problems at school , how many problems did she have to do for homework ?
+there are NUMBER_0 erasers and NUMBER_1 scissors in the drawer . PERSON_0 placed NUMBER_2 erasers in the drawer . how many erasers are DATE there in total ?
+PERSON_0 had NUMBER_0 pokemon cards , and NUMBER_1 were torn . PERSON_1 gave NUMBER_2 new pokemon cards . how many pokemon cards does PERSON_0 have DATE ?
+PERSON_0 has NUMBER_0 marbles . he buys NUMBER_1 more . later , PERSON_0 buys NUMBER_2 apples at the store . how many marbles does PERSON_0 have in all ?
+there are NUMBER_0 marbles in each box . how many marbles are in NUMBER_1 boxes ?
+a pot contains NUMBER_0 liters of brine at a concentration of NUMBER_1 grams per liter . how much of the water should be boiled off to increase the concentration to NUMBER_2 grams per liter ?
+there are NUMBER_0 boys and some girls on the playground . there are NUMBER_1 children altogether . how many girls are on the playground ?
+mr. PERSON_0 read NUMBER_0 pages of a book on DATE . he read NUMBER_1 of the remainder on DATE . if he still has NUMBER_2 pages to read , how many pages are in the book ?
+PERSON_0 got fast food for lunch . PERSON_0 spent MONEY_1 on soup and MONEY_2 on a salad . PERSON_0 paid with a MONEY_3 bill . what was the total of the lunch bill ?
+PERSON_0 has some fish in his fish tank . PERSON_1 gave him NUMBER_0 more fish . DATE he has NUMBER_1 . how many fish did he have to begin with ?
+PERSON 's room is NUMBER_0 feet long and NUMBER_1 feet wide . how much carpet does she need to cover the whole floor ?
+MISC_0 had some marbles . connie gave NUMBER_0 to PERSON_0 . PERSON_1 has NUMBER_1 marbles left . how many did MISC_0 have to start with ?
+PERSON_0 had DATE_0 legos , but she lost NUMBER_0 legos . how many legos does she have DATE ?
+while playing a trivia game , PERSON_0 answered NUMBER_0 questions correct in the ORDINAL half and NUMBER_0 questions correct in the ORDINAL half . if each question was worth NUMBER_0 points , what was his final NUMBER_1 ?
+PERSON_0 bought NUMBER_0 boxes of chocolate candy and gave NUMBER_1 to his little brother . if each box has NUMBER_2 pieces inside it , how many pieces did PERSON_0 still have ?
+PERSON_0 had NUMBER_0 pennies in his bank . he spent NUMBER_1 of his pennies . how many pennies does he have DATE ?
+as PERSON_0 was searching through her couch cushions , she found DURATION_1 , and NUMBER_0 pennies in the couch . how much money in total does PERSON_0 have ?
+PERSON_0 starts with NUMBER_0 erasers . he gives NUMBER_1 to PERSON_1 . how many erasers does PERSON_0 end with ?
+PERSON grew NUMBER_0 watermelons and NUMBER_1 pumpkins . PERSON grew NUMBER_2 watermelons . how many watermelons did they grow in total ?
+during a visit to an orchard , PERSON_0 picked NUMBER_0 bag of MISC apples , NUMBER_0 bag of MISC apples , and NUMBER bag of LOCATION apples . how many bags of fruit did PERSON_0 pick in total ?
+PERSON 's pencil is NUMBER_0 inches long . if she sharpens it , DATE her pencil is NUMBER_1 inches long . how much did she sharpen off of her pencil ?
+PERSON_0 had NUMBER_0 video games but NUMBER_1 of them were n't working . if he wanted to sell the working games for MONEY_1 each , how much money could he earn ?
+PERSON_0 makes MONEY_1 per DURATION for a DURATION_0 work DURATION and time-and-a-half for SET over DURATION_0 . if she made DATE , how many overtime DURATION did she work ?
+NUMBER_0 times the sum of NUMBER_1 and a number is NUMBER_2 . find the number .
+PERSON_0 found NUMBER_0 seashells on the beach . she gave PERSON_1 some of her seashells . she has NUMBER_1 seashell left . how many seashells did she give to PERSON_1 ?
+PERSON_0 has NUMBER_0 red marbles . PERSON_1 has NUMBER_1 times more red marbles than PERSON_0 . how many red marbles does PERSON_1 have ?
+a tennis racket that regularly sells for MONEY_1 is on sale for PERCENT_0 off the regular price . what is the sale price , in dollars ?
+there are NUMBER_0 candies in a pile on the desk . each candy comes in a package of NUMBER_1 . NUMBER_2 candies are added to the pile . how many candies are there in the pile ?
+mrs. PERSON_0 bought NUMBER_0 pizzas . each pizza had NUMBER_1 slices . how many total slices of pizza did she have ?
+PERSON_0 has NUMBER_0 violet balloons and NUMBER_1 red balloons . he lost NUMBER_2 of the violet balloons . how many violet balloons does PERSON_0 have DATE ?
+PERSON_0 had NUMBER_0 socks . if he threw away NUMBER_1 old ones that did n't fit and bought NUMBER_2 new ones , how many socks would he have ?
+PERSON_0 had NUMBER_0 potatoes and NUMBER_1 cantelopes in the garden . the rabbits ate NUMBER_1 of the potatoes . how many potatoes does DATE have ?
+PERSON_0 starts with NUMBER_0 marbles and NUMBER_1 oranges . she shares NUMBER_2 with PERSON_1 . how many marbles does PERSON_0 end with ?
+at the arcade , PERSON_0 won NUMBER_0 tickets playing ` whack a mole ' and NUMBER_1 tickets playing ` skee ball ' . if he spent NUMBER_2 of his tickets on a hat , how many tickets does PERSON_0 have left ?
+a water flow restrictor has reduced the flow of water to MONEY_0 per DURATION . this amount is NUMBER_0 gallon per DURATION less than NUMBER_1 the original flow rate . find the original rate in gallons per DURATION .
+PERSON_0 has NUMBER_0 baseball cards . he has NUMBER_1 more than PERSON_1 . how many baseball cards does PERSON_1 have ?
+PERSON 's science class weighed plastic rings for an experiment . they found that the orange ring weighed NUMBER_0 of an ounce , the purple ring weighed NUMBER_1 of an ounce , and the white ring weighed NUMBER of an ounce . what was the total weight of the plastic rings ?
+PERSON_0 has NUMBER_0 packs of crayons . each pack has NUMBER_1 crayons in it . she also has NUMBER_2 extra crayons . how many crayons does PERSON_0 have altogether ?
+PERSON_0 starts with NUMBER_0 apples . he buys NUMBER_1 more . how many apples does harry end with ?
+a farmer started DATE with NUMBER_0 buckets of seeds . after spending the TIME sowing seeds , she DATE has NUMBER_1 buckets left . how many buckets of seeds did the farmer sow ?
+a truck carrying MONEY_1 of sand travels to a construction yard and loses MONEY_1 of sand along the way . how much sand does the truck have when it arrives at the yard ?
+PERSON_0 decided to sell all of her old books . she gathered up NUMBER_0 books to sell . she sold NUMBER_1 books in a yard sale . how many books does DATE have ?
+if PERSON_0 split NUMBER_0 apples between NUMBER_1 people in her class and kept the left overs , how many apples did each classmate get ?
+PERSON_0 made smoothies in the blender . she used NUMBER_0 of a cup of strawberries , NUMBER_1 of a cup of yogurt , and NUMBER_0 of a cup of orange juice . how many cups of ingredients did PERSON_0 use for the smoothies ?
+PERSON_0 had pokemon cards . he gave ORGANIZATION cards to his friends . he DATE has ORGANIZATION cards left . how many MISC cards did he have to start with ?
+PERSON_0 had NUMBER_0 files on her computer . she deleted NUMBER_1 of them and put the rest into folders with NUMBER_2 files in each NUMBER . how many folders did PERSON_0 end up with ?
+mrs. PERSON_0 saw NUMBER_0 bugs eat NUMBER_1 flowers each . how many flowers total did the bugs eat ?
+there were a total of NUMBER_0 football games DATE , NUMBER_1 are played at TIME . PERSON_0 missed NUMBER_1 of the games . how many football games did PERSON_0 go to in total ?
+PERSON_0 began her pizza delivery route with NUMBER_0 of a tank of gas in her car . when she made it back to the pizzeria , NUMBER_1 of a tank of gas was left . how much gas did PERSON_0 use ?
+there were NUMBER_0 geese and NUMBER_1 ducks in the marsh . how many birds were there in all ?
+there are NUMBER_0 pencils and NUMBER_1 scissors in the drawer . PERSON_0 placed NUMBER_2 pencils in the drawer . how many pencils are DATE there in all ?
+PERSON_0 purchased a basketball game for MONEY_1 , and a racing game for MONEY_2 . how much did PERSON_0 spend on video games ?
+there were NUMBER_0 bales of hay in the barn and NUMBER_1 bales in the shed . PERSON stacked bales in the barn DATE . there are NUMBER_2 bales of hay in the barn . how many bales did he store in the barn ?
+PERSON grew NUMBER_0 turnips and NUMBER_1 cantelopes . PERSON_0 grew NUMBER_2 turnips . how many turnips did they grow in total ?
+before starting her shift , a waitress checks to make sure there is enough mustard for her customers . she finds NUMBER_0 bottle at the ORDINAL table , NUMBER_0 bottle at the ORDINAL table , and NUMBER bottle at the ORDINAL table . altogether , how many bottles of mustard does the waitress find ?
+PERSON_0 has NUMBER_0 blocks . NUMBER_1 are eaten by a hippopotamus . how many blocks will PERSON_0 have ?
+PERSON 's bus ride to school is NUMBER_0 of a mile and PERSON 's bus ride is NUMBER_1 of a mile . how much longer is PERSON 's bus ride than PERSON 's ?
+at a pie-eating contest , PERSON_0 got through NUMBER_0 pie before time was called ; PERSON_1 finished just NUMBER_1 pie . how much more pie did PERSON_0 eat than PERSON_1 ?
+the value of a sport utility vehicle DATE is MONEY_1 , which is NUMBER_0 of what its value was DATE . find the value of the vehicle DATE .
+PERSON_0 bought NUMBER coloring books . NUMBER_0 had NUMBER_1 pictures and the other had NUMBER_2 . after DURATION she had already colored NUMBER_3 of the pictures . how many pictures does she still have to color ?
+there are NUMBER_0 pigs in the barn . some more come to join them . DATE there are NUMBER_1 pigs . how many pigs came to join them ?
+a car company produced DATE_0 cars in LOCATION and DATE_1 cars in LOCATION . how many cars is that in all ?
+at the fair PERSON_0 bought NUMBER_0 tickets . after riding the ferris wheel he had NUMBER_1 tickets left . if each ticket cost MONEY_1 , how much money did PERSON_0 spend riding the ferris wheel ?
+PERSON_0 starts with NUMBER_0 skittles . she shares NUMBER_1 with PERSON_1 . how many skittles does PERSON_0 end with ?
+PERSON_0 bought NUMBER_0 boxes of chocolate candy and NUMBER_1 boxes of caramel candy . if each box has NUMBER_2 pieces inside it , how much candy did he have total ?
+PERSON_0 starts with NUMBER_0 apples . she finds another NUMBER_1 . how many apples does PERSON_0 end with ?
+your class had a pizza party . NUMBER of a pizza was left over , and NUMBER_0 of another pizza was left over . you put them both into NUMBER box . how much pizza do you have altogether ?
+a clothing store offers a PERCENT_0 discount on all purchases . how much would a shopper pay for an item originally costing MONEY_1 ?
+PERSON_0 scored NUMBER_0 points in each game . how many points did she NUMBER_1 in NUMBER_2 games ?
+sue 's family went on vacation . her mom drove the car at NUMBER_0 mph . they camped at a campground after traveling for DURATION_0 . how far was the campground from their home ?
+your quiz grades are NUMBER_0 , NUMBER_1 , NUMBER , NUMBER . what is the lowest grade you can obtain on the last quiz and still achieve an average of at least NUMBER_2 ?
+there are NUMBER_0 crayons and NUMBER_1 pencils in the drawer . PERSON_0 placed NUMBER_2 crayons in the drawer . how many crayons are DATE there in total ?
+PERSON_0 picked NUMBER_0 pumpkins . the ORDINAL pumpkin weighed NUMBER_1 pounds , and the ORDINAL pumpkin weighed NUMBER_2 pounds . how much did the NUMBER_0 pumpkins weigh all together ?
+hoping to be named PERSON_0 , PERSON_1 called the names from NUMBER_0 pages of the phone book DATE . DATE , she called the people listed on another NUMBER_1 pages of the same phone book . how many pages worth of people did PERSON_1 call in all ?
+at the schools book fair PERSON_0 bought NUMBER_0 adventure books and NUMBER_1 mystery books . if NUMBER of the books were used , how many new books did he buy ?
+the length of a rectangular field is NUMBER_0 meters . this is NUMBER_1 meters less than twice the width . find the width .
+SET , the polar bear at LOCATION 's zoo eats NUMBER_0 of a bucket of trout and NUMBER_1 of a bucket of salmon . how many buckets of fish does the polar bear eat SET ?
+PERSON_0 is selling NUMBER_0 gumballs for MONEY_0 each . how much money can PERSON_0 get from selling the gumballs ?
+there are NUMBER_0 short bushes and NUMBER_1 tall trees DATE in the park . park workers will plant NUMBER_2 short bushes DATE . how many short bushes will the park have when the workers are finished ?
+PERSON_0 earns MONEY_1 per DURATION . for SET over DURATION_2 he earns MONEY_1 per DURATION . if he works DURATION_2 in DURATION , what pay should he receive ?
+PERSON_0 is learning to drive , so DATE she practiced driving NUMBER_0 of a mile with her mother and another NUMBER_1 of a mile with her father . how far did PERSON_0 drive in all ?
+PERSON_0 bought NUMBER_0 boxes of chocolate candy and gave NUMBER_1 to his little brother . if each box has NUMBER_2 pieces inside it , how many pieces did PERSON_0 still have ?
+a box of books weighs NUMBER_0 pounds . each book weighs NUMBER_1 pounds . how many books are there in the box ?
+PERSON_0 had NUMBER_0 markers . PERSON_1 gave her NUMBER_1 more markers . how many markers does PERSON_0 have altogether ?
+a worker at a medical lab is studying blood samples . NUMBER samples contained a total of NUMBER_0 blood cells . the ORDINAL sample contained NUMBER_1 blood cells . how many blood cells were in the ORDINAL sample ?
+PERSON_0 went to the salon and had NUMBER_0 inch of hair cut off . DATE she went back and asked for another NUMBER_1 inch to be cut off . how much hair did she have cut off in all ?
+there were NUMBER_0 roses in the vase . PERSON_0 cut some roses from her flower garden . there are NUMBER_1 roses in the vase . how many roses did she cut ?
+convert NUMBER_0 to a percent .
+brandy made trail mix for a backpacking trip . she used NUMBER_0 of a pound of peanuts , NUMBER_0 of a pound of chocolate chips , and NUMBER of a pound of raisins . how many pounds of trail mix did brandy make ?
+PERSON_0 has NUMBER_0 apples . she gets NUMBER_0 more from PERSON_1 . later , PERSON_0 buys NUMBER_1 crayons at the store . how many apples does PERSON_0 have in all ?
+PERSON_0 has NUMBER_0 oranges . PERSON_1 takes NUMBER_1 away . how many oranges will PERSON_0 have ?
+PERSON_0 had DURATION_1 in her bank . her sister borrowed NUMBER_0 of her quarters . how many quarters does PERSON_0 have DATE ?
+PERSON_0 picked NUMBER_0 pears and NUMBER_1 apples from the orchard . she gave NUMBER_2 pears to PERSON_1 . how many pears does PERSON_0 have ?
+PERSON_0 was selling his old games . he started out with NUMBER_0 but sold NUMBER_1 of them . he packed the rest up putting NUMBER_2 games into each box . how many boxes did he have to use ?
