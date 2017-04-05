@@ -143,6 +143,10 @@ def val(net,src,tgt,eq_v,out_v):
     tstr = ""
     # measure accuracy up to 5th pred?
     acc += sum([int(outputs[i].data[0]==tgt[c][i]) for i in range(50)])/50
+    turned_out = [None]*50
+    for i in range(10):
+      for j in range(5):
+        turned_out[(j*10)+i] = outputs[(i*5)+j]
     for j in range(5):
       if out_v[int(outputs[(j*10)].data[0])] == "<NULL>":
         break
