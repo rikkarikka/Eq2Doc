@@ -6,14 +6,6 @@ import GlobalAttention as GA
 from get_config import CUDA_ON,bsz
 import plan_opts as opt
 
-class network(nnModule):
-  def __init__(self):
-    super().__init__()
-    self.somax = nn.Softmax()
-    self.emb = nn.Embedding(opt.vocab_size,opt.emb_size,padding_idx=0)
-    self.brnn = nn.LSTM(opt.emb_size,opt.h_size//2,batch_first=True,bidirectional=True)
-
-
 
 class network_2(nn.Module):
   def __init__(self,eq_v_size,out_v_size,emb_size=100,h_size=100):
@@ -33,14 +25,7 @@ class network_2(nn.Module):
     self.r_emb = nn.Embedding(5,h_size//2)
     self.upscale = nn.Linear(h_size//2,h_size)
     self.toVocab = nn.Linear(h_size,self.out_v+1)
-    '''
-    self.down_rnn = []
-    for j in range(10):
-      if CUDA_ON:
-        self.down_rnn.append(nn.LSTMCell(h_size//2,h_size//2).cuda())
-      else:
-        self.down_rnn.append(nn.LSTMCell(h_size//2,h_size//2))
-    '''
+
     self.bsz = 0
     self.gen = False
 
@@ -83,19 +68,17 @@ class network_2(nn.Module):
     hprime, cprime = hc2
 
 
-    for i in range(5):
-      for j in range(10):
+    for i in range(10):
+      if CUDA_ON:
+        pc = self.pc_emb(Variable(torch.cuda.LongTensor(self.bsz).fill_(i)))
+      else:
+        pc = self.pc_emb(Variable(torch.LongTensor(self.bsz).fill_(i)))
+      for j in range(5):
         if self.gen:
           hprime, cprime = self.dp_rnn(dp_emb,(hprime,cprime))
         else:
           hprime, cprime = self.dp_rnn(dp_emb[:,phs,:],(hprime,cprime))
 
-        #hdp[j],cdp[j] = self.down_rnn[j](prev[j],(hdp[j],cdp[j]))
-
-        if CUDA_ON:
-          pc = self.pc_emb(Variable(torch.cuda.LongTensor(self.bsz).fill_(j)))
-        else:
-          pc = self.pc_emb(Variable(torch.LongTensor(self.bsz).fill_(j)))
         p = torch.cat((hprime,pc),1)
         context,attn = self.attention(p,o)
         op = self.toVocab(context)
@@ -107,10 +90,8 @@ class network_2(nn.Module):
             dp_emb = Variable(torch.LongTensor(1).fill_(int(dp_emb)))
           outputs.append(dp_emb)
           dp_emb = self.dpemb(dp_emb)
-          #prev[j] = dp_emb
         else:
           outputs.append(op)
-          #prev[j] = dp_emb[:,phs,:]
 
         attns.append(attn)
         phs +=1
