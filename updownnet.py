@@ -12,29 +12,55 @@ import GlobalAttention as GA
 from get_config import CUDA_ON,bsz
 import plan_opts as opt
 
-class network(nnModule):
+class network(nn.Module):
   def __init__(self):
     super().__init__()
-    self.somax = nn.Softmax()
+    self.somax = nn.LogSoftmax()
     self.emb = nn.Embedding(opt.vocab_size,opt.emb_size,padding_idx=0)
     self.plan_emb = nn.Embedding(opt.out_vocab_size,opt.h_size,padding_idx=0)
-    self.plan_rnn = nn.LSTM(opt.h_size*2,opt.h_size,opt.layers,batch_first=True)
+    self.plan_rnn = nn.LSTMCell(opt.h_size*2,opt.h_size)
     self.brnn = nn.LSTM(opt.emb_size,opt.h_size//2,batch_first=True,bidirectional=True)
-    self.labels =["PRED","ARG0","ARG1","ARG2","ARG3","DIS","NEG","MATH0","MATH1","SENT"]
+    self.labels = None
+    self.gen = nn.Sequential(nn.Linear(opt.h_size,opt.out_vocab_size),nn.LogSoftmax())
+    self.attn = GA.GlobalAttention(opt.h_size)
+    self.dropout = nn.Dropout(opt.dropout)
     
-  def forward(self,eq):
-    eq_emb = self.emb(eq)
-    eq_out, eq_context = self.brnn(eq_emb)
 
-    label_emb = self.plan_emb(self.labels)
+  def init_h(self,bsz):
+    h = Variable(torch.cuda.FloatTensor(bsz,opt.h_size).zero_(),requires_grad=False)
+    return h
+
+  def forward(self,eq,dp,generate=False):
+    bsz = eq.size(0)
+    eq_emb = self.emb(eq)
+    print("OK")
+    eq_out, eq_context = self.brnn(eq_emb)
+    print("OK")
+
+    labels = Variable(torch.cuda.LongTensor([list(range(1,11))]*bsz))
+    print(labels)
+    label_emb = self.plan_emb(labels)
+    print(label_emb)
+    if not generate:
+      dp_emb = self.plan_emb(dp)
+
     outputs = []
+    hidden = self.init_h(bsz)
     for i in range(10):
-      output, hidden = self.plan_rnn(label_emb[:,i,:])
+      emb_t = torch.cat([label_emb[:,i,:],hidden],1)
+      output, hidden = self.plan_rnn(emb_t.unsqueeze(1),hidden)
 
       for j in range(5):
-        emb_t = torch.cat([eq_emb[(i*5)+j],output],1)
+        if generate:
+          emb_t = self.gen(output).data[0].cpu().numpy().argmax()
+          emb_t = torch.cat([emb_t,output],1)
+        else:
+          print(dp_emb[:,(i*5)+j,:])
+          print(output)
+          emb_t = torch.cat([dp_emb[:,(i*5)+j,:].unsqueeze(1),output],2)
         output, hidden = self.plan_rnn(emb_t,hidden)
-        output, attn = self.attn(output, eq_context)
+        print(output.size(),eq_out.size())
+        output, attn = self.attn(output, eq_out)
         output = self.dropout(output)
         outputs.append(output)
 
@@ -74,9 +100,8 @@ def dp_vocab_2(dps):
     for s in dp:
       for p in s:
         vocab.extend(p)
-  v = ["<NULL>"] + [k for k,v in Counter(vocab).items() if v>1] + ["NEW_S","SAME_S","PRED","ARG0",
-                                                                    "ARG1","ARG2","ARG3","ARG4",
-                                                                    "DIS","NEG","MATH0","MATH1","SENT"]
+  v = ["<NULL>","NEW_S","SAME_S","PRED","ARG0","ARG1","ARG2","ARG3",
+      "DIS","NEG","MATH0","MATH1","SENT"] + [k for k,v in Counter(vocab).items() if v>1] 
   return v
 
 def vocabize(item,vocab,seqlen=None,pad=0):
@@ -140,15 +165,13 @@ def do_epoch(net,optimizer,criterion,src,tgt_flat,epoch):
     inputs = Variable(bsrc)
     intgt = Variable(bintgt)
     outtgt = Variable(bouttgt)
-    h,c = net.init_hidden(bsz)
-    h2,c2 = net.init_hidden_2(bsz)
     if CUDA_ON:
       inputs.cuda()
       intgt.cuda()
       outtgt.cuda()
     def closure():
       optimizer.zero_grad()
-      outputs,_ = net(inputs,intgt,(h,c),(h2,c2))
+      outputs,_ = net(inputs,intgt)
       loss = 0
       for j in range(50):
         loss += criterion(outputs[j],outtgt[:,j])
@@ -160,20 +183,17 @@ def do_epoch(net,optimizer,criterion,src,tgt_flat,epoch):
 
 def val(net,src,tgt,eq_v,out_v):
   net.eval()
-  hc = net.init_hidden(1)
-  hc_2 = net.init_hidden_2(1)
   out_v = out_v +  ['oov']
   ev = eq_v + ['oov']
   ostr = ""
-  net.set_gen()
   dps = torch.LongTensor(1).zero_()
   acc = 0
   for c,s in enumerate(src):
     if CUDA_ON:
       dps.cuda()
-      outputs,_ = net(Variable(torch.cuda.LongTensor(s).view(1,-1)),Variable(dps).cuda(),hc,hc_2)
+      outputs,_ = net(Variable(torch.cuda.LongTensor(s).view(1,-1)),Variable(dps).cuda(),True)
     else:
-      outputs,_ = net(Variable(torch.LongTensor(s).view(1,-1)),Variable(dps),hc,hc_2)
+      outputs,_ = net(Variable(torch.LongTensor(s).view(1,-1)),Variable(dps),True)
     tstr = ""
     # measure accuracy up to 5th pred?
     acc += sum([int(outputs[i].data[0]==tgt[c][i]) for i in range(50)])/50
@@ -205,6 +225,8 @@ def train(out_dir):
 
   eq_v = vocab(train_eqs,False)
   out_v = dp_vocab_2(train_dps)
+  opt.vocab_size = len(eq_v)+1
+  opt.out_vocab_size = len(out_v)+1
 
   train_src = [vocabize(x,eq_v,15) for x in train_eqs]
   #train_tgt = [dp_vocabize(x, pred_v, math_v, arg_v ) for x in train_dps]
@@ -214,14 +236,15 @@ def train(out_dir):
 
   criterion = nn.CrossEntropyLoss()
 
-  net = network(len(eq_v),len(out_v))
+  net = network()
+  net.labels = Variable(torch.cuda.LongTensor([out_v.index(x) for x in ["PRED","ARG0","ARG1","ARG2","ARG3","DIS","NEG","MATH0","MATH1","SENT"]]))
   optimizer = optim.Adam(net.parameters())
   if CUDA_ON:
     net.cuda()
     criterion.cuda()
 
   for epoch in range(EPOCHS):
-    do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
+    do_epoch(net,optimizer,criterion,train_src,train_tgt,epoch)
 
     if epoch % 10 == 9:
       print("Writing %d checkpoint" % epoch)
@@ -244,10 +267,13 @@ def usage():
 if __name__=="__main__":
 
   if sys.argv[1] == "train":
+    train(sys.argv[2])
+    '''
     try:
       train(sys.argv[2])
     except:
       usage()
+    '''
 
   elif sys.argv[1] == "val":
     with open(sys.argv[2],'rb') as f:

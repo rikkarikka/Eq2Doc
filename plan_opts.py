@@ -1,3 +1,4 @@
+dropout = 0.3
 vocab_size = 100
 out_vocab_size = 1000
 emb_size = 50
