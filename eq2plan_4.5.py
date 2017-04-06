@@ -128,8 +128,8 @@ def val(net,src,tgt,eq_v,out_v):
   net.eval()
   hc = net.init_hidden(1)
   hc_2 = net.init_hidden_2(1)
-  out_v = out_v +  ['oov']
-  ev = eq_v + ['oov']
+  out_v[len(out_v)] = 'oov'
+  eq_v[len(eq_v)] = 'oov'
   ostr = ""
   net.set_gen()
   dps = torch.LongTensor(1).zero_()
@@ -164,8 +164,8 @@ def val(net,src,tgt,eq_v,out_v):
   return ostr,acc
 
 
-def train(out_dir,pickle=True):
-  if pickle:
+def train(out_dir,pickled=True):
+  if pickled:
     with open("pickles/eq2planData.pickle",'rb') as f:
       fns, eqs, dps, _ = pickle.load(f)
         
@@ -174,37 +174,20 @@ def train(out_dir,pickle=True):
     train_dps = [x for i,x in enumerate(dps) if i in train_idx]
     dev_eqs = [eqs[i] for i in dev_idx]
     dev_dps = [dps[i] for i in dev_idx]
+    eq_v = vocab(train_eqs,False)
+    out_v = dp_vocab_2(train_dps)
+
+    train_src = [vocabize(x,eq_v,15) for x in train_eqs]
+    train_tgt = [dp_vocabize_2(x, out_v ) for x in train_dps]
+    dev_src = [vocabize(x,eq_v) for x in dev_eqs]
+    dev_tgt = [dp_vocabize_2(x, out_v ) for x in dev_dps]
+    
 
   else:
-    print("DOING ROC CORPUS")
-    with open("roc/first-train.txt") as f:
-      train_eqs = [x.strip().split() for x in f]
-    with open("roc/first-val.txt") as f:
-      dev_eqs = [x.strip().split() for x in f]
-    with open("roc/doc-train.txt") as f:
-      train_dps = [x.strip() for x in f]
-      train_dps = [x.split(" EOS ") for x in train_dps]
-      for i in range(len(train_dps)):
-        train_dps[i] = [x.split(" EOP ") for x in train_dps[i]]
-        for j in range(len(train_dps[i])):
-          train_dps[i][j] = [x.split(" ") for x in train_dps[i][j]]
-    with open("roc/doc-val.txt") as f:
-      dev_dps = [x.strip() for x in f]
-      dev_dps = [x.split(" EOS ") for x in dev_dps]
-      for i in range(len(dev_dps)):
-        dev_dps[i] = [x.split(" EOP ") for x in dev_dps[i]]
-        for j in range(len(dev_dps[i])):
-          dev_dps[i][j] = [x.split(" ") for x in dev_dps[i][j]]
-
+    eq_v,req,out_v,rout = pickle.load(open("pickles/roc_first2doc.vocabs",'rb'))
+    train_src,train_tgt,dev_src,dev_tgt = pickle.load(open("pickles/roc_first2doc.datapoints",'rb'))
   print("DATA LOADED")
-  eq_v = vocab(train_eqs,False)
-  out_v = dp_vocab_2(train_dps)
 
-  train_src = [vocabize(x,eq_v,15) for x in train_eqs]
-  train_tgt = [dp_vocabize_2(x, out_v ) for x in train_dps]
-  dev_src = [vocabize(x,eq_v) for x in dev_eqs]
-  dev_tgt = [dp_vocabize_2(x, out_v ) for x in dev_dps]
-  
   batches = make_batches(list(range(len(train_src))))
 
   criterion = nn.CrossEntropyLoss()
@@ -221,19 +204,16 @@ def train(out_dir,pickle=True):
     do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
     print("DONE ",epoch)
 
-    if epoch % 10 == 9:
-      print("Writing %d checkpoint" % epoch)
-      checkpoint = {
-        'model': net,
-        'vocabs': (eq_v,out_v),
-        'vecs': (train_src,train_tgt,dev_src,dev_tgt),
-        'epoch':epoch
-      }
-      torch.save(checkpoint, out_dir+"/"+str(epoch)+'checkpoint.mod')
-      ostr,acc = val(net,dev_src,dev_tgt,eq_v,out_v)
-      print("Valid Accuracy: %f" %acc)
-      with open(out_dir+"/val-"+str(acc)+"-e"+str(epoch)+".out",'w') as f:
-        f.write(ostr)
+    print("Writing %d checkpoint" % epoch)
+    checkpoint = {
+      'model': net,
+      'epoch':epoch
+    }
+    torch.save(checkpoint, out_dir+"/"+str(epoch)+'checkpoint.mod')
+    ostr,acc = val(net,dev_src,dev_tgt,req,rout)
+    print("Valid Accuracy: %f" %acc)
+    with open(out_dir+"/val-"+str(acc)+"-e"+str(epoch)+".out",'w') as f:
+      f.write(ostr)
 
 def usage():
   print("Usage: babababa")
