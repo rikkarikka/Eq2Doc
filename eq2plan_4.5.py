@@ -87,7 +87,8 @@ def make_batches(idxs):
   return batches
 
 
-def do_epoch(net,optimizer,criterion,src,tgt_flat,batches,epoch):
+def do_epoch(net,optimizer,criterion,src,tgt_flat,epoch):
+  batches = make_batches(list(range(len(train_src))))
   c = 0
   net.train()
   for b in batches:
@@ -186,9 +187,9 @@ def train(out_dir,pickled=True):
   else:
     eq_v,req,out_v,rout = pickle.load(open("pickles/roc_first2doc.vocabs",'rb'))
     train_src,train_tgt,dev_src,dev_tgt = pickle.load(open("pickles/roc_first2doc.datapoints",'rb'))
+
   print("DATA LOADED")
 
-  batches = make_batches(list(range(len(train_src))))
 
   criterion = nn.CrossEntropyLoss()
 
@@ -201,19 +202,22 @@ def train(out_dir,pickled=True):
     criterion.cuda()
 
   for epoch in range(EPOCHS):
-    do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
+    do_epoch(net,optimizer,criterion,train_src,train_tgt,epoch)
     print("DONE ",epoch)
 
     print("Writing %d checkpoint" % epoch)
     checkpoint = {
       'model': net,
+      'vocabs': (req,rout),
       'epoch':epoch
     }
     torch.save(checkpoint, out_dir+"/"+str(epoch)+'checkpoint.mod')
+    '''
     ostr,acc = val(net,dev_src,dev_tgt,req,rout)
     print("Valid Accuracy: %f" %acc)
     with open(out_dir+"/val-"+str(acc)+"-e"+str(epoch)+".out",'w') as f:
       f.write(ostr)
+    '''
 
 def usage():
   print("Usage: babababa")
