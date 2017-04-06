@@ -1,3 +1,5 @@
+roc/*
+roc_out/*
 out_updown/*
 amazon_data/*
 __pycache__/*
