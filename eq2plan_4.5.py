@@ -88,7 +88,7 @@ def make_batches(idxs):
 
 
 def do_epoch(net,optimizer,criterion,src,tgt_flat,epoch):
-  batches = make_batches(list(range(len(train_src))))
+  batches = make_batches(list(range(len(src))))
   c = 0
   net.train()
   for b in batches:
