@@ -147,6 +147,8 @@ def val(net,src,tgt,eq_v,out_v):
     for i in range(10):
       for j in range(5):
         turned_out[(j*10)+i] = outputs[(i*5)+j]
+
+    outputs = turned_out
     for j in range(5):
       if out_v[int(outputs[(j*10)].data[0])] == "<NULL>":
         break
@@ -162,17 +164,39 @@ def val(net,src,tgt,eq_v,out_v):
   return ostr,acc
 
 
-def train(out_dir):
-  with open("pickles/eq2planData.pickle",'rb') as f:
-    fns, eqs, dps, _ = pickle.load(f)
+def train(out_dir,pickle=True):
+  if pickle:
+    with open("pickles/eq2planData.pickle",'rb') as f:
+      fns, eqs, dps, _ = pickle.load(f)
+        
+    train_idx,dev_idx,_ = tdt_split(fns)
+    train_eqs = [x for i,x in enumerate(eqs) if i in train_idx]
+    train_dps = [x for i,x in enumerate(dps) if i in train_idx]
+    dev_eqs = [eqs[i] for i in dev_idx]
+    dev_dps = [dps[i] for i in dev_idx]
 
-  
-  train_idx,dev_idx,_ = tdt_split(fns)
-  train_eqs = [x for i,x in enumerate(eqs) if i in train_idx]
-  train_dps = [x for i,x in enumerate(dps) if i in train_idx]
-  dev_eqs = [eqs[i] for i in dev_idx]
-  dev_dps = [dps[i] for i in dev_idx]
+  else:
+    print("DOING ROC CORPUS")
+    with open("roc/first-train.txt") as f:
+      train_eqs = [x.strip().split() for x in f]
+    with open("roc/first-val.txt") as f:
+      dev_eqs = [x.strip().split() for x in f]
+    with open("roc/doc-train.txt") as f:
+      train_dps = [x.strip() for x in f]
+      train_dps = [x.split(" EOS ") for x in train_dps]
+      for i in range(len(train_dps)):
+        train_dps[i] = [x.split(" EOP ") for x in train_dps[i]]
+        for j in range(len(train_dps[i])):
+          train_dps[i][j] = [x.split(" ") for x in train_dps[i][j]]
+    with open("roc/doc-val.txt") as f:
+      dev_dps = [x.strip() for x in f]
+      dev_dps = [x.split(" EOS ") for x in dev_dps]
+      for i in range(len(dev_dps)):
+        dev_dps[i] = [x.split(" EOP ") for x in dev_dps[i]]
+        for j in range(len(dev_dps[i])):
+          dev_dps[i][j] = [x.split(" ") for x in dev_dps[i][j]]
 
+  print("DATA LOADED")
   eq_v = vocab(train_eqs,False)
   out_v = dp_vocab_2(train_dps)
 
@@ -180,18 +204,22 @@ def train(out_dir):
   train_tgt = [dp_vocabize_2(x, out_v ) for x in train_dps]
   dev_src = [vocabize(x,eq_v) for x in dev_eqs]
   dev_tgt = [dp_vocabize_2(x, out_v ) for x in dev_dps]
+  
   batches = make_batches(list(range(len(train_src))))
 
   criterion = nn.CrossEntropyLoss()
 
   net = network(len(eq_v),len(out_v))
   optimizer = optim.Adam(net.parameters())
+
+  print("MODELS CREATED")
   if CUDA_ON:
     net.cuda()
     criterion.cuda()
 
   for epoch in range(EPOCHS):
     do_epoch(net,optimizer,criterion,train_src,train_tgt,batches,epoch)
+    print("DONE ",epoch)
 
     if epoch % 10 == 9:
       print("Writing %d checkpoint" % epoch)
@@ -214,10 +242,11 @@ def usage():
 if __name__=="__main__":
 
   if sys.argv[1] == "train":
-    try:
+    if sys.argv[2] == "roc_out/":
+      train(sys.argv[2],False)
+    else:
       train(sys.argv[2])
-    except:
-      usage()
+
 
   elif sys.argv[1] == "val":
     with open(sys.argv[2],'rb') as f:
@@ -225,7 +254,7 @@ if __name__=="__main__":
     net = chpt["model"]
     eq_v,out_v = chpt["vocabs"]
     train_src,train_tgt,dev_src,dev_tgt = chpt["vecs"]
-    ostr = val(net,dev_src,dev_tgt,eq_v,out_v)
+    ostr,acc = val(net,dev_src,dev_tgt,eq_v,out_v)
     with open("last-val.out",'w') as f:
       f.write(ostr)
 
